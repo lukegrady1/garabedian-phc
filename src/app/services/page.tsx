@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 import { FadeIn } from "@/components/motion/FadeIn";
 
@@ -17,7 +18,7 @@ export default function ServicesPage() {
       <section className="relative w-full h-[409px] min-h-[300px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/services/hero-service-engineering.jpg"
+            src={withBasePath("/images/services/hero-service-engineering.jpg")}
             alt="Service Engineering"
             fill
             sizes="100vw"
@@ -46,7 +47,7 @@ export default function ServicesPage() {
               <div className="border-2 border-current p-1 text-primary">
                 <div className="relative aspect-square">
                   <Image
-                    src="/images/services/plumbing-work.jpg"
+                    src={withBasePath("/images/services/plumbing-work.jpg")}
                     alt="Plumbing Work"
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"
@@ -162,7 +163,7 @@ export default function ServicesPage() {
               <div className="border-2 border-current p-1 text-white">
                 <div className="relative aspect-[4/5]">
                   <Image
-                    src="/images/services/heating-system.jpg"
+                    src={withBasePath("/images/services/heating-system.jpg")}
                     alt="Heating System"
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"
@@ -183,7 +184,7 @@ export default function ServicesPage() {
               <div className="border-2 border-current p-1 text-primary">
                 <div className="relative aspect-square">
                   <Image
-                    src="/images/services/ac-condenser-unit.jpg"
+                    src={withBasePath("/images/services/ac-condenser-unit.jpg")}
                     alt="Modern residential outdoor air conditioning condenser unit"
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"

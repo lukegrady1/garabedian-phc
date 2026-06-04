@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 
 export function Header() {
@@ -18,7 +19,7 @@ export function Header() {
       <div className="flex items-center gap-8">
         <Link href="/">
           <Image
-            src="/images/shared/logo.png"
+            src={withBasePath("/images/shared/logo.png")}
             alt={siteConfig.businessName}
             width={200}
             height={64}

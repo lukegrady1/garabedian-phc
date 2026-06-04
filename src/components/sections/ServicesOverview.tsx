@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { withBasePath } from "@/lib/base-path";
 
 const services = [
   {
@@ -54,7 +55,7 @@ export function ServicesOverview() {
               delay={i * 0.1}
             >
               <Image
-                src={service.image}
+                src={withBasePath(service.image)}
                 alt={service.alt}
                 fill
                 sizes="(max-width: 768px) 100vw, 66vw"

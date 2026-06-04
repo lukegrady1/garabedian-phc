@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Award, Leaf } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 import { FadeIn } from "@/components/motion/FadeIn";
 
@@ -58,7 +59,7 @@ export default function AboutPage() {
             <div className="md:col-span-5">
               <div className="relative border-[12px] border-primary aspect-[4/5] overflow-hidden">
                 <Image
-                  src="/images/about/family-crew-portrait.jpg"
+                  src={withBasePath("/images/about/family-crew-portrait.jpg")}
                   alt="A high-contrast, professional group portrait of a multi-generational family plumbing crew standing confidently in front of a heavy-duty white service van with bold red lettering."
                   fill
                   sizes="(max-width: 768px) 100vw, 42vw"

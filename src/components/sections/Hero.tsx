@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 export function Hero() {
@@ -38,7 +39,7 @@ export function Hero() {
         <FadeIn className="md:col-span-5" delay={0.2}>
           <div className="border-[12px] border-primary w-full aspect-square relative bg-surface-variant overflow-hidden">
             <Image
-              src="/images/home/hero-furnace-tech.jpg"
+              src={withBasePath("/images/home/hero-furnace-tech.jpg")}
               alt="A professional plumbing technician inspecting a modern furnace"
               fill
               sizes="(max-width: 768px) 100vw, 42vw"

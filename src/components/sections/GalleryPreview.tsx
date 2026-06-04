@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { withBasePath } from "@/lib/base-path";
 
 const projects = [
   {
@@ -51,7 +52,7 @@ export function GalleryPreview() {
             <FadeIn key={project.title} className="relative group" delay={i * 0.1}>
               <div className="aspect-[3/4] border-4 border-primary overflow-hidden relative">
                 <Image
-                  src={project.image}
+                  src={withBasePath(project.image)}
                   alt={project.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

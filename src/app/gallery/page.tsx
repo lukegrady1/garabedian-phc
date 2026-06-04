@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Droplets, Flame, Snowflake } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 import { FadeIn } from "@/components/motion/FadeIn";
 
@@ -29,7 +30,7 @@ function GalleryItem({
       )}
     >
       <Image
-        src={src}
+        src={withBasePath(src)}
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

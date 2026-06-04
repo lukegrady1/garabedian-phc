@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 
 function FacebookIcon({ className }: { className?: string }) {
   return (
@@ -25,7 +26,7 @@ export function Footer() {
         {/* Column 1: Logo + Tagline */}
         <div className="flex flex-col gap-6">
           <Image
-            src="/images/shared/logo.png"
+            src={withBasePath("/images/shared/logo.png")}
             alt={siteConfig.businessName}
             width={240}
             height={80}
@@ -44,13 +45,6 @@ export function Footer() {
               className="text-white/60 hover:text-white transition-colors"
             >
               <FacebookIcon className="w-6 h-6" />
-            </a>
-            <a
-              href="#"
-              aria-label="Instagram"
-              className="text-white/60 hover:text-white transition-colors"
-            >
-              <InstagramIcon className="w-6 h-6" />
             </a>
           </div>
         </div>
