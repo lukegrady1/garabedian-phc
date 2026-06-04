@@ -13,8 +13,9 @@ export function Hero() {
             When it breaks, you call Garabedian.
           </h1>
           <p className="font-body text-[18px] leading-[1.6] text-on-surface-variant max-w-xl">
-            Plumbing, heating, and cooling for Worcester and Central Mass. A
-            licensed family crew that shows up and does it right.
+            Worcester County{"'"}s trusted name in plumbing, heating, and cooling
+            for over 100 years. Three generations of licensed professionals
+            serving homes and businesses across Central Massachusetts.
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
             <Link

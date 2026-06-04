@@ -10,12 +10,12 @@ export function TrustStrip() {
             <div className="flex items-center gap-2">
               <Star className="w-6 h-6 text-secondary fill-secondary" />
               <span className="font-headline text-[24px] leading-[1.2] font-semibold">
-                4.9 STARS
+                4.2 STARS
               </span>
             </div>
             <div className="h-8 w-px bg-white/20 hidden md:block" />
             <span className="font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase">
-              Family owned since 1978
+              Family owned since 1916
             </span>
             <div className="h-8 w-px bg-white/20 hidden md:block" />
             <span className="font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase">

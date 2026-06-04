@@ -50,14 +50,14 @@ export function Header() {
       <div className="flex items-center gap-6">
         <a
           href={siteConfig.phoneHref}
-          className="hidden md:block uppercase text-[12px] font-bold tracking-[0.15em] font-body text-white"
+          className="hidden md:block uppercase text-[16px] font-bold tracking-[0.1em] font-headline text-white"
         >
           {siteConfig.phone}
         </a>
 
         <Link
           href="/contact"
-          className="hidden sm:block bg-secondary text-white px-6 py-2 uppercase text-[12px] font-bold tracking-[0.15em] font-body hover:opacity-90 transition-all"
+          className="hidden sm:block bg-secondary text-white px-7 py-3 uppercase text-[14px] font-bold tracking-[0.1em] font-headline hover:opacity-90 transition-all"
         >
           Request Service
         </Link>

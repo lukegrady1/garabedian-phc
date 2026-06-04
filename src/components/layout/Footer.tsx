@@ -104,11 +104,19 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-white/10">
+        <div className="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="uppercase text-[12px] font-bold tracking-[0.15em] font-body text-white/50">
             &copy; {new Date().getFullYear()} {siteConfig.businessName}.{" "}
             {siteConfig.license}. {siteConfig.epa}.
           </p>
+          <a
+            href="https://gradydigital.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="uppercase text-[12px] font-bold tracking-[0.15em] font-body text-white/50 hover:text-white transition-colors"
+          >
+            Built by Grady Digital
+          </a>
         </div>
       </div>
     </footer>

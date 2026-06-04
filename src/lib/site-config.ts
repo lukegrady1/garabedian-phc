@@ -42,7 +42,7 @@ export const siteConfig = {
     years: "40+",
     projects: "1,428",
     satisfaction: "100%",
-    rating: "4.9",
+    rating: "4.2",
   },
   founded: "1916",
   founderStory: "Founded by Hagop Garabedian",
