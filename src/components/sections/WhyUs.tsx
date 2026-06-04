@@ -23,10 +23,10 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section className="w-full bg-primary py-[80px] px-[40px] text-on-primary border-y-4 border-primary">
+    <section className="w-full bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px] text-on-primary border-y-4 border-primary">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-[24px] items-center">
         <FadeIn>
-          <h2 className="font-headline text-[80px] leading-none font-extrabold tracking-[-0.02em] uppercase">
+          <h2 className="font-headline text-[32px] sm:text-[48px] md:text-[80px] leading-none font-extrabold tracking-[-0.02em] uppercase">
             Why we&apos;re the{" "}
             <span className="text-surface-variant">first call</span> in Central
             Mass.

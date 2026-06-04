@@ -34,10 +34,10 @@ function Stars() {
 
 export function Testimonials() {
   return (
-    <section className="w-full bg-primary py-[80px] px-[40px] text-on-primary">
+    <section className="w-full bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px] text-on-primary">
       <div className="max-w-[1200px] mx-auto">
         <FadeIn>
-          <h2 className="font-headline text-[48px] leading-[1.1] font-bold uppercase mb-16 text-center">
+          <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-10 md:mb-16 text-center">
             What Neighbors Say
           </h2>
         </FadeIn>
@@ -45,11 +45,11 @@ export function Testimonials() {
           {testimonials.map((testimonial, i) => (
             <FadeIn
               key={testimonial.author}
-              className="bg-primary/50 p-8 border-l-4 border-surface-variant"
+              className="bg-primary/50 p-5 md:p-8 border-l-4 border-surface-variant"
               delay={i * 0.1}
             >
               <Stars />
-              <p className="font-body text-[18px] leading-[1.6] italic mb-6">
+              <p className="font-body text-[15px] md:text-[18px] leading-[1.6] italic mb-6">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
               <p className="font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase text-surface-variant">

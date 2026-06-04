@@ -6,13 +6,13 @@ import { FadeIn } from "@/components/motion/FadeIn";
 
 export function Hero() {
   return (
-    <section className="w-full bg-surface px-[40px] py-[80px] border-b-2 border-outline">
+    <section className="w-full bg-surface px-[20px] md:px-[40px] py-[48px] md:py-[80px] border-b-2 border-outline">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
         <FadeIn className="md:col-span-7 flex flex-col gap-6">
-          <h1 className="font-headline text-[64px] md:text-[80px] text-primary leading-none uppercase font-extrabold tracking-[-0.02em]">
+          <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] text-primary leading-none uppercase font-extrabold tracking-[-0.02em]">
             When it breaks, you call Garabedian.
           </h1>
-          <p className="font-body text-[18px] leading-[1.6] text-on-surface-variant max-w-xl">
+          <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-on-surface-variant max-w-xl">
             Worcester County{"'"}s trusted name in plumbing, heating, and cooling
             for over 100 years. Three generations of licensed professionals
             serving homes and businesses across Central Massachusetts.
@@ -20,7 +20,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
             <Link
               href="/contact"
-              className="bg-secondary text-on-secondary px-10 py-4 font-headline text-[24px] leading-[1.2] font-semibold uppercase hover:opacity-90 transition-colors"
+              className="bg-secondary text-on-secondary px-8 py-3 md:px-10 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:opacity-90 transition-colors"
             >
               Request Service
             </Link>
@@ -30,7 +30,7 @@ export function Hero() {
               </span>
               <a
                 href={siteConfig.phoneHref}
-                className="font-headline text-[24px] leading-[1.2] font-semibold text-primary"
+                className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold text-primary"
               >
                 {siteConfig.phone}
               </a>
@@ -38,7 +38,7 @@ export function Hero() {
           </div>
         </FadeIn>
         <FadeIn className="md:col-span-5" delay={0.2}>
-          <div className="border-[12px] border-primary w-full aspect-square relative bg-surface-variant overflow-hidden">
+          <div className="border-[8px] md:border-[12px] border-primary w-full aspect-square relative bg-surface-variant overflow-hidden">
             <Image
               src={withBasePath("/images/home/hero-furnace-tech.jpg")}
               alt="A professional plumbing technician inspecting a modern furnace"

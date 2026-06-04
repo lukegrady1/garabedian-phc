@@ -32,11 +32,11 @@ const projects = [
 
 export function GalleryPreview() {
   return (
-    <section className="w-full bg-surface px-[40px] py-[80px]">
+    <section className="w-full bg-surface px-[20px] md:px-[40px] py-[48px] md:py-[80px]">
       <div className="max-w-[1200px] mx-auto">
         <FadeIn>
-          <div className="flex justify-between items-end mb-12">
-            <h2 className="font-headline text-[48px] leading-[1.1] font-bold text-primary uppercase">
+          <div className="flex justify-between items-end mb-8 md:mb-12">
+            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-primary uppercase">
               Recent Work
             </h2>
             <Link
@@ -63,7 +63,7 @@ export function GalleryPreview() {
                 <span className="bg-primary text-on-primary px-3 py-1 font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase">
                   {project.location}
                 </span>
-                <p className="mt-2 font-headline text-[24px] leading-[1.2] font-semibold uppercase">
+                <p className="mt-2 font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase">
                   {project.title}
                 </p>
               </div>

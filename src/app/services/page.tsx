@@ -26,9 +26,9 @@ export default function ServicesPage() {
             preload
           />
         </div>
-        <div className="relative z-10 text-center px-[40px]">
+        <div className="relative z-10 text-center px-[20px] md:px-[40px]">
           <FadeIn>
-            <h1 className="font-headline text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold uppercase text-primary mb-2">
+            <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold uppercase text-primary mb-2">
               Services
             </h1>
             <div className="w-24 h-2 bg-primary mx-auto" />
@@ -41,7 +41,7 @@ export default function ServicesPage() {
 
       {/* Service 1: Plumbing */}
       <FadeIn>
-        <section className="bg-surface-variant py-[80px] px-[40px] border-t-2 border-primary">
+        <section className="bg-surface-variant py-[48px] md:py-[80px] px-[20px] md:px-[40px] border-t-2 border-primary">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
             <div className="md:col-span-5 order-2 md:order-1">
               <div className="border-2 border-current p-1 text-primary">
@@ -57,13 +57,13 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="md:col-span-7 order-1 md:order-2 flex flex-col items-start">
-              <h2 className="font-headline text-[48px] leading-[1.1] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-primary mb-8">
+              <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-primary mb-8">
                 Plumbing
               </h2>
               <ul className="space-y-6 mb-10 w-full">
                 <li className="flex gap-4 border-l-4 border-primary pl-6">
                   <div>
-                    <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase text-primary">
+                    <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary">
                       Water Heaters
                     </h4>
                     <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant">
@@ -74,7 +74,7 @@ export default function ServicesPage() {
                 </li>
                 <li className="flex gap-4 border-l-4 border-primary pl-6">
                   <div>
-                    <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase text-primary">
+                    <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary">
                       Repiping Specialists
                     </h4>
                     <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant">
@@ -85,7 +85,7 @@ export default function ServicesPage() {
                 </li>
                 <li className="flex gap-4 border-l-4 border-primary pl-6">
                   <div>
-                    <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase text-primary">
+                    <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary">
                       Drain Cleaning
                     </h4>
                     <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant">
@@ -108,15 +108,15 @@ export default function ServicesPage() {
 
       {/* Service 2: Heating */}
       <FadeIn>
-        <section className="bg-primary py-[80px] px-[40px] text-white">
+        <section className="bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px] text-white">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
             <div className="md:col-span-7 flex flex-col items-start">
-              <h2 className="font-headline text-[48px] leading-[1.1] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-white mb-8">
+              <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-white mb-8">
                 Heating
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 w-full">
                 <div className="bg-white/10 p-6 border-l-4 border-white">
-                  <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase mb-2">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
                     Boiler Systems
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
@@ -125,7 +125,7 @@ export default function ServicesPage() {
                   </p>
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
-                  <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase mb-2">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
                     Furnaces
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
@@ -134,7 +134,7 @@ export default function ServicesPage() {
                   </p>
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
-                  <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase mb-2">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
                     Radiant Heat
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
@@ -143,7 +143,7 @@ export default function ServicesPage() {
                   </p>
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
-                  <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase mb-2">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
                     Oil-to-Gas
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
@@ -178,7 +178,7 @@ export default function ServicesPage() {
 
       {/* Service 3: Air Conditioning */}
       <FadeIn>
-        <section className="bg-surface-variant py-[80px] px-[40px] border-t-2 border-primary">
+        <section className="bg-surface-variant py-[48px] md:py-[80px] px-[20px] md:px-[40px] border-t-2 border-primary">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
             <div className="md:col-span-5 order-2 md:order-1">
               <div className="border-2 border-current p-1 text-primary">
@@ -194,12 +194,12 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="md:col-span-7 order-1 md:order-2 flex flex-col items-start">
-              <h2 className="font-headline text-[48px] leading-[1.1] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-primary mb-8">
+              <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-primary mb-8">
                 Air Conditioning
               </h2>
               <div className="space-y-4 mb-10 w-full">
                 <div className="border-2 border-primary p-6 hover:bg-primary hover:text-white transition-all group">
-                  <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase group-hover:text-white">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase group-hover:text-white">
                     Central Air Systems
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant group-hover:text-white/80">
@@ -208,7 +208,7 @@ export default function ServicesPage() {
                   </p>
                 </div>
                 <div className="border-2 border-primary p-6 hover:bg-primary hover:text-white transition-all group">
-                  <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase group-hover:text-white">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase group-hover:text-white">
                     Ductless Mini-Splits
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant group-hover:text-white/80">
@@ -217,7 +217,7 @@ export default function ServicesPage() {
                   </p>
                 </div>
                 <div className="border-2 border-primary p-6 hover:bg-primary hover:text-white transition-all group">
-                  <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase group-hover:text-white">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase group-hover:text-white">
                     Indoor Air Quality
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant group-hover:text-white/80">
@@ -239,17 +239,17 @@ export default function ServicesPage() {
 
       {/* Emergency CTA Band */}
       <FadeIn>
-        <section className="bg-surface-container-highest py-16 px-[40px] text-center border-y-4 border-primary">
-          <h3 className="font-headline text-[48px] leading-[1.1] font-bold uppercase text-primary mb-4">
+        <section className="bg-surface-container-highest py-10 md:py-16 px-[20px] md:px-[40px] text-center border-y-4 border-primary">
+          <h3 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase text-primary mb-4">
             Emergency Service Available 24/7
           </h3>
-          <p className="font-body text-[18px] leading-[1.6] text-primary mb-8 max-w-2xl mx-auto">
+          <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-primary mb-8 max-w-2xl mx-auto">
             When things go wrong, you need a name you can trust. Our master
             plumbers and HVAC technicians are standing by.
           </p>
           <a
             href={siteConfig.phoneHref}
-            className="inline-flex items-center gap-4 bg-secondary text-white px-12 py-5 font-headline text-[24px] leading-[1.2] font-semibold uppercase tracking-wider hover:opacity-90"
+            className="inline-flex items-center gap-4 bg-secondary text-white px-12 py-5 font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase tracking-wider hover:opacity-90"
           >
             <Phone className="w-6 h-6" />
             Call Now: {siteConfig.phone}

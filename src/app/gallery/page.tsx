@@ -48,12 +48,12 @@ export default function GalleryPage() {
     <>
       {/* Hero Band */}
       <FadeIn>
-        <section className="w-full bg-primary py-[80px] px-[40px]">
+        <section className="w-full bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px]">
           <div className="max-w-[1200px] mx-auto">
-            <h1 className="font-headline text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold text-white uppercase mb-4">
+            <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold text-white uppercase mb-4">
               Project Gallery
             </h1>
-            <p className="font-body text-[18px] leading-[1.6] text-white/80 max-w-2xl">
+            <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-2xl">
               A visual record of professional plumbing, heating, and air
               conditioning craftsmanship. No filters, no staged mockups—just
               real results for our neighbors across Central Massachusetts.
@@ -64,9 +64,9 @@ export default function GalleryPage() {
 
       {/* Plumbing Section */}
       <FadeIn>
-        <section className="w-full bg-surface py-[80px] px-[40px]" id="plumbing">
+        <section className="w-full bg-surface py-[48px] md:py-[80px] px-[20px] md:px-[40px]" id="plumbing">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-headline text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
+            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
               <Droplets className="w-8 h-8 text-primary" />
               Plumbing
             </h2>
@@ -98,11 +98,11 @@ export default function GalleryPage() {
       {/* Heating Section */}
       <FadeIn>
         <section
-          className="w-full bg-surface-container py-[80px] px-[40px]"
+          className="w-full bg-surface-container py-[48px] md:py-[80px] px-[20px] md:px-[40px]"
           id="heating"
         >
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-headline text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
+            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
               <Flame className="w-8 h-8 text-primary" />
               Heating
             </h2>
@@ -127,9 +127,9 @@ export default function GalleryPage() {
 
       {/* Air Conditioning Section */}
       <FadeIn>
-        <section className="w-full bg-surface py-[80px] px-[40px]" id="ac">
+        <section className="w-full bg-surface py-[48px] md:py-[80px] px-[20px] md:px-[40px]" id="ac">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-headline text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
+            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
               <Snowflake className="w-8 h-8 text-primary" />
               Air Conditioning
             </h2>
@@ -160,12 +160,12 @@ export default function GalleryPage() {
 
       {/* CTA */}
       <FadeIn>
-        <section className="w-full bg-primary py-[80px] px-[40px] text-center">
+        <section className="w-full bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px] text-center">
           <div className="max-w-[800px] mx-auto">
-            <h3 className="font-headline text-[48px] leading-[1.1] font-bold text-white uppercase mb-6">
+            <h3 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-white uppercase mb-6">
               Need Results Like These?
             </h3>
-            <p className="font-body text-[18px] leading-[1.6] text-white/70 mb-10">
+            <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/70 mb-10">
               We bring the same level of precision and mechanical integrity to
               every job site, large or small.
             </p>

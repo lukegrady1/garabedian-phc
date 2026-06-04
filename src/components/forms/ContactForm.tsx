@@ -28,12 +28,12 @@ export function ContactForm({ className }: { className?: string }) {
 
   if (submitted) {
     return (
-      <div className={cn("bg-white p-10 border-2 border-primary", className)}>
-        <h2 className="font-headline text-[48px] leading-[1.1] font-bold uppercase mb-8 text-primary">
+      <div className={cn("bg-white p-6 md:p-10 border-2 border-primary", className)}>
+        <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-8 text-primary">
           Service Inquiry
         </h2>
         <div className="py-12 text-center">
-          <p className="font-headline text-[24px] leading-[1.2] font-semibold uppercase text-primary mb-4">
+          <p className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary mb-4">
             Request Received
           </p>
           <p className="font-body text-[16px] leading-[1.5] text-on-surface">
@@ -46,8 +46,8 @@ export function ContactForm({ className }: { className?: string }) {
   }
 
   return (
-    <div className={cn("bg-white p-10 border-2 border-primary", className)}>
-      <h2 className="font-headline text-[48px] leading-[1.1] font-bold uppercase mb-8 text-primary">
+    <div className={cn("bg-white p-6 md:p-10 border-2 border-primary", className)}>
+      <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-8 text-primary">
         Service Inquiry
       </h2>
       <form className="space-y-6" onSubmit={handleSubmit}>
@@ -128,7 +128,7 @@ export function ContactForm({ className }: { className?: string }) {
         {/* Submit */}
         <button
           type="submit"
-          className="w-full bg-secondary text-white font-headline text-[24px] leading-[1.2] font-semibold uppercase py-5 hover:brightness-110 transition-colors duration-300"
+          className="w-full bg-secondary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase py-5 hover:brightness-110 transition-colors duration-300"
         >
           Send Request
         </button>

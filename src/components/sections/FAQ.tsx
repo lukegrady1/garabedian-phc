@@ -27,10 +27,10 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="w-full bg-surface px-[40px] py-[80px]">
+    <section className="w-full bg-surface px-[20px] md:px-[40px] py-[48px] md:py-[80px]">
       <div className="max-w-[1200px] mx-auto">
         <FadeIn>
-          <h2 className="font-headline text-[48px] leading-[1.1] font-bold text-primary uppercase mb-12">
+          <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-primary uppercase mb-8 md:mb-12">
             Common Questions
           </h2>
         </FadeIn>
@@ -48,7 +48,7 @@ export function FAQ() {
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                 >
                   <div className="flex justify-between items-center mb-2">
-                    <h4 className="font-headline text-[24px] leading-[1.2] font-semibold uppercase">
+                    <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase">
                       {faq.question}
                     </h4>
                     {isOpen ? (

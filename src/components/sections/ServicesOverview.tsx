@@ -12,7 +12,7 @@ const services = [
     alt: "Hands expertly tightening a pipe fitting",
     colSpan: "md:col-span-8",
     height: "h-[400px]",
-    titleSize: "font-headline text-[48px] leading-[1.1] font-bold",
+    titleSize: "font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold",
   },
   {
     label: "Heating",
@@ -23,7 +23,7 @@ const services = [
     alt: "Industrial boiler system",
     colSpan: "md:col-span-4 md:row-span-2",
     height: "h-[400px] md:h-auto",
-    titleSize: "font-headline text-[24px] leading-[1.2] font-semibold",
+    titleSize: "font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold",
   },
   {
     label: "Air Conditioning",
@@ -34,16 +34,16 @@ const services = [
     alt: "Exterior AC unit",
     colSpan: "md:col-span-8",
     height: "h-[350px]",
-    titleSize: "font-headline text-[24px] leading-[1.2] font-semibold",
+    titleSize: "font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold",
   },
 ];
 
 export function ServicesOverview() {
   return (
-    <section className="w-full bg-surface px-[40px] py-[80px]">
+    <section className="w-full bg-surface px-[20px] md:px-[40px] py-[48px] md:py-[80px]">
       <div className="max-w-[1200px] mx-auto">
         <FadeIn>
-          <h2 className="font-headline text-[48px] leading-[1.1] font-bold text-primary uppercase mb-12">
+          <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-primary uppercase mb-8 md:mb-12">
             Core Services
           </h2>
         </FadeIn>
@@ -62,7 +62,7 @@ export function ServicesOverview() {
                 className="object-cover grayscale-[0.3] group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-8 flex flex-col gap-2">
+              <div className="absolute bottom-0 left-0 p-5 md:p-8 flex flex-col gap-2">
                 <span className="inline-block bg-secondary text-on-secondary px-3 py-1 font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase self-start">
                   {service.label}
                 </span>

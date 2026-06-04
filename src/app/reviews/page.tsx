@@ -111,27 +111,27 @@ export default function ReviewsPage() {
     <>
       {/* Rating Hero Band */}
       <FadeIn>
-        <section className="w-full bg-primary text-white py-[80px] px-[40px] border-b-4 border-primary">
+        <section className="w-full bg-primary text-white py-[48px] md:py-[80px] px-[20px] md:px-[40px] border-b-4 border-primary">
           <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between gap-[24px]">
             <div className="text-center md:text-left">
-              <h1 className="font-headline text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold uppercase mb-4 text-white">
+              <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold uppercase mb-4 text-white">
                 RELIABILITY
                 <br />
                 EARNED DAILY
               </h1>
-              <p className="font-body text-[18px] leading-[1.6] opacity-80 max-w-xl text-white">
+              <p className="font-body text-[15px] md:text-[18px] leading-[1.6] opacity-80 max-w-xl text-white">
                 Our reputation is built on one home, one leak, and one furnace
                 at a time. See why Worcester County trusts Garabedian.
               </p>
             </div>
-            <div className="bg-primary/80 p-12 border-2 border-white/20 text-center flex flex-col items-center">
+            <div className="bg-primary/80 p-8 md:p-12 border-2 border-white/20 text-center flex flex-col items-center">
               <div className="flex gap-1 mb-4 text-white">
                 {[...Array(4)].map((_, i) => (
                   <Star key={i} className="w-10 h-10 fill-current" />
                 ))}
                 <Star className="w-10 h-10 fill-current opacity-50" />
               </div>
-              <span className="font-headline text-[100px] leading-none mb-2 text-white">
+              <span className="font-headline text-[64px] md:text-[100px] leading-none mb-2 text-white">
                 {siteConfig.stats.rating}
               </span>
               <span className="font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold uppercase opacity-70 text-white">
@@ -143,17 +143,17 @@ export default function ReviewsPage() {
       </FadeIn>
 
       {/* Infinite Scrolling Reviews Section */}
-      <section className="w-full bg-[#b3dcf1] py-[80px] overflow-hidden">
+      <section className="w-full bg-[#b3dcf1] py-[48px] md:py-[80px] overflow-hidden">
         <ScrollRow reviews={topRowReviews} direction="left" />
         <div className="h-[24px]" />
         <ScrollRow reviews={bottomRowReviews} direction="right" />
 
-        <div className="mt-16 flex justify-center">
+        <div className="mt-10 md:mt-16 flex justify-center">
           <a
             href={siteConfig.googleReviewLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary text-white font-headline text-[24px] leading-[1.2] font-semibold px-12 py-6 uppercase hover:opacity-90 transition-all flex items-center gap-4"
+            className="bg-secondary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-12 py-6 uppercase hover:opacity-90 transition-all flex items-center gap-4"
           >
             Read More Reviews
             <ArrowRight className="w-6 h-6" />
@@ -163,25 +163,25 @@ export default function ReviewsPage() {
 
       {/* CTA Section */}
       <FadeIn>
-        <section className="w-full bg-primary text-white py-[80px] px-[40px] text-center border-t-4 border-primary">
+        <section className="w-full bg-primary text-white py-[48px] md:py-[80px] px-[20px] md:px-[40px] text-center border-t-4 border-primary">
           <div className="max-w-[800px] mx-auto">
-            <h2 className="font-headline text-[48px] leading-[1.1] font-bold uppercase mb-6 text-white">
+            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-6 text-white">
               READY TO EXPERIENCE THE DIFFERENCE?
             </h2>
-            <p className="font-body text-[18px] leading-[1.6] mb-12 opacity-80 text-white">
+            <p className="font-body text-[15px] md:text-[18px] leading-[1.6] mb-12 opacity-80 text-white">
               Join the thousands of satisfied customers in Massachusetts.
               Contact us today for your plumbing, heating, or cooling needs.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
                 href="/contact"
-                className="bg-secondary text-white font-headline text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:opacity-90 transition-all"
+                className="bg-secondary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:opacity-90 transition-all"
               >
                 Schedule Service
               </Link>
               <a
                 href={siteConfig.emergencyPhoneHref}
-                className="border-2 border-white text-white font-headline text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:bg-white hover:text-primary transition-all"
+                className="border-2 border-white text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:bg-white hover:text-primary transition-all"
               >
                 Emergency Help
               </a>

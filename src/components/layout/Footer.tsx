@@ -21,7 +21,7 @@ function InstagramIcon({ className }: { className?: string }) {
 
 export function Footer() {
   return (
-    <footer className="w-full bg-primary text-white px-[40px] py-[80px] border-t-2 border-white/15">
+    <footer className="w-full bg-primary text-white px-[20px] md:px-[40px] py-[48px] md:py-[80px] border-t-2 border-white/15">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-[24px]">
         {/* Column 1: Logo + Tagline */}
         <div className="flex flex-col gap-6">
@@ -51,7 +51,7 @@ export function Footer() {
 
         {/* Column 2: Service Areas */}
         <div className="flex flex-col gap-4">
-          <h4 className="font-headline text-[24px] font-semibold leading-[1.2] uppercase border-b border-white/20 pb-2">
+          <h4 className="font-headline text-[20px] md:text-[24px] font-semibold leading-[1.2] uppercase border-b border-white/20 pb-2">
             Service Areas
           </h4>
           <ul className="font-body text-[16px] leading-[1.5] text-white/70 flex flex-col gap-1">
@@ -63,7 +63,7 @@ export function Footer() {
 
         {/* Column 3: Hours */}
         <div className="flex flex-col gap-4">
-          <h4 className="font-headline text-[24px] font-semibold leading-[1.2] uppercase border-b border-white/20 pb-2">
+          <h4 className="font-headline text-[20px] md:text-[24px] font-semibold leading-[1.2] uppercase border-b border-white/20 pb-2">
             Hours
           </h4>
           <div className="font-body text-[16px] leading-[1.5] text-white/70">
@@ -78,7 +78,7 @@ export function Footer() {
 
         {/* Column 4: Quick Links */}
         <div className="flex flex-col gap-4">
-          <h4 className="font-headline text-[24px] font-semibold leading-[1.2] uppercase border-b border-white/20 pb-2">
+          <h4 className="font-headline text-[20px] md:text-[24px] font-semibold leading-[1.2] uppercase border-b border-white/20 pb-2">
             Quick Links
           </h4>
           <nav className="flex flex-col gap-2">
@@ -104,7 +104,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="col-span-1 md:col-span-4 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div className="col-span-1 md:col-span-4 mt-8 md:mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p className="uppercase text-[12px] font-bold tracking-[0.15em] font-body text-white/50">
             &copy; {new Date().getFullYear()} {siteConfig.businessName}.{" "}
             {siteConfig.license}. {siteConfig.epa}.
