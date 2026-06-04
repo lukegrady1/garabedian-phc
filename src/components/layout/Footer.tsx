@@ -37,7 +37,9 @@ export function Footer() {
           </p>
           <div className="flex justify-center gap-4">
             <a
-              href="#"
+              href="https://www.facebook.com/garabedianplumbing"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
               className="text-white/60 hover:text-white transition-colors"
             >
