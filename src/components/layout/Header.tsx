@@ -17,7 +17,14 @@ export function Header() {
     <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[40px] bg-primary h-[72px] shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
       {/* Left: Logo + Desktop Nav */}
       <div className="flex items-center gap-8">
-        <Link href="/">
+        <Link
+          href="/"
+          onClick={() => {
+            if (pathname === "/") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+        >
           <Image
             src={withBasePath("/images/shared/logo.png")}
             alt={siteConfig.businessName}

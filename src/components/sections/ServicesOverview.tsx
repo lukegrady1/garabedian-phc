@@ -12,7 +12,7 @@ const services = [
     alt: "Hands expertly tightening a pipe fitting",
     colSpan: "md:col-span-8",
     height: "h-[400px]",
-    titleSize: "font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold",
+    titleSize: "font-headline text-[20px] md:text-[24px] lg:text-[48px] leading-[1.1] font-bold",
   },
   {
     label: "Heating",
