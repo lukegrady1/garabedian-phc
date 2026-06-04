@@ -63,9 +63,6 @@ export function ServicesOverview() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent" />
               <div className="absolute bottom-0 left-0 p-5 md:p-8 flex flex-col gap-2">
-                <span className="inline-block bg-secondary text-on-secondary px-3 py-1 font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase self-start">
-                  {service.label}
-                </span>
                 <h3
                   className={`${service.titleSize} text-on-primary uppercase`}
                 >

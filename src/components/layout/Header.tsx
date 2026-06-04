@@ -14,7 +14,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[40px] bg-primary h-[72px] shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
+    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[12px] md:px-[40px] bg-primary h-[72px] shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
       {/* Left: Logo + Desktop Nav */}
       <div className="flex items-center gap-8">
         <Link
