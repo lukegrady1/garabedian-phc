@@ -17,25 +17,31 @@ export function Hero() {
             for over 100 years. Three generations of licensed professionals
             serving homes and businesses across Central Massachusetts.
           </p>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-4">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
             <Link
               href="/contact"
               className="bg-secondary text-on-secondary px-8 py-3 md:px-10 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:opacity-90 transition-colors"
             >
               Request Service
             </Link>
-            <div className="flex flex-col">
-              <span className="font-body text-[12px] leading-none tracking-[0.15em] font-bold text-primary uppercase opacity-70">
-                Immediate Dispatch
-              </span>
-              <a
-                href={siteConfig.phoneHref}
-                className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold text-primary"
-              >
-                {siteConfig.phone}
-              </a>
-            </div>
+            <Link
+              href="/emergency"
+              className="border-2 border-primary text-primary px-8 py-3 md:px-10 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:bg-primary hover:text-white transition-colors"
+            >
+              Emergency? Call Now
+            </Link>
           </div>
+          <a
+            href={siteConfig.phoneHref}
+            className="flex items-center gap-2 mt-2"
+          >
+            <span className="font-body text-[12px] leading-none tracking-[0.15em] font-bold text-primary uppercase opacity-70">
+              Immediate Dispatch:
+            </span>
+            <span className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold text-primary">
+              {siteConfig.phone}
+            </span>
+          </a>
         </FadeIn>
         <FadeIn className="md:col-span-5" delay={0.2}>
           <div className="border-[8px] md:border-[12px] border-primary w-full aspect-square relative bg-surface-variant overflow-hidden">

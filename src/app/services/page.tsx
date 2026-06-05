@@ -247,13 +247,21 @@ export default function ServicesPage() {
             When things go wrong, you need a name you can trust. Our master
             plumbers and HVAC technicians are standing by.
           </p>
-          <a
-            href={siteConfig.phoneHref}
-            className="inline-flex items-center gap-4 bg-secondary text-white px-12 py-5 font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase tracking-wider hover:opacity-90"
-          >
-            <Phone className="w-6 h-6" />
-            Call Now: {siteConfig.phone}
-          </a>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href={siteConfig.phoneHref}
+              className="inline-flex items-center justify-center gap-4 bg-secondary text-white px-8 md:px-12 py-4 md:py-5 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase tracking-wider hover:opacity-90"
+            >
+              <Phone className="w-5 h-5 md:w-6 md:h-6" />
+              Call Now: {siteConfig.phone}
+            </a>
+            <Link
+              href="/emergency"
+              className="inline-flex items-center justify-center border-2 border-primary text-primary px-8 md:px-12 py-4 md:py-5 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:bg-primary hover:text-white transition-all"
+            >
+              Emergency Info
+            </Link>
+          </div>
         </section>
       </FadeIn>
     </>

@@ -9,24 +9,30 @@ export function ClosingCTA() {
         <h2 className="font-headline text-[32px] sm:text-[48px] md:text-[80px] leading-none font-extrabold tracking-[-0.02em] uppercase max-w-4xl">
           No heat, no cooling, or no water? Call the crew that shows up.
         </h2>
-        <div className="flex flex-col md:flex-row items-center gap-8 mt-4">
+        <div className="flex flex-col md:flex-row items-center gap-6 mt-4">
           <Link
             href="/contact"
             className="bg-secondary text-on-secondary px-8 py-3 md:px-12 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:opacity-90 transition-all"
           >
             Request Service
           </Link>
-          <div className="flex flex-col items-center md:items-start">
-            <span className="font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase opacity-70">
-              Call a Licensed Pro
-            </span>
-            <a
-              href={siteConfig.phoneHref}
-              className="font-headline text-[36px] sm:text-[48px] md:text-[64px] leading-none text-surface-variant font-extrabold tracking-[-0.02em]"
-            >
-              {siteConfig.phone}
-            </a>
-          </div>
+          <Link
+            href="/emergency"
+            className="border-2 border-surface-variant text-surface-variant px-8 py-3 md:px-12 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:bg-surface-variant hover:text-primary transition-all"
+          >
+            24/7 Emergency Help
+          </Link>
+        </div>
+        <div className="flex flex-col items-center mt-2">
+          <span className="font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase opacity-70">
+            Call a Licensed Pro
+          </span>
+          <a
+            href={siteConfig.phoneHref}
+            className="font-headline text-[36px] sm:text-[48px] md:text-[64px] leading-none text-surface-variant font-extrabold tracking-[-0.02em]"
+          >
+            {siteConfig.phone}
+          </a>
         </div>
       </FadeIn>
     </section>

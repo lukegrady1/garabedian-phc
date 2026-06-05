@@ -47,9 +47,18 @@ export function ContactForm({ className }: { className?: string }) {
 
   return (
     <div className={cn("bg-white p-6 md:p-10 border-2 border-primary", className)}>
-      <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-8 text-primary">
+      <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-4 text-primary">
         Service Inquiry
       </h2>
+      <div className="bg-secondary/10 border-2 border-secondary p-4 mb-6 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+        <span className="font-body text-[13px] md:text-[14px] leading-[1.5] text-primary">
+          <strong>Having an emergency?</strong> Please call us directly at{" "}
+          <a href="tel:5087574803" className="font-bold text-secondary underline">
+            508-757-4803
+          </a>{" "}
+          instead of filling out this form.
+        </span>
+      </div>
       <form className="space-y-6" onSubmit={handleSubmit}>
         {/* Name + Phone side by side */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
