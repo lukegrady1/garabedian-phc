@@ -63,10 +63,10 @@ export function Header() {
         </a>
 
         <Link
-          href="/contact"
+          href="/emergency"
           className="hidden sm:block bg-secondary text-white px-7 py-3 uppercase text-[14px] font-bold tracking-[0.1em] font-headline hover:opacity-90 transition-all"
         >
-          Request Service
+          Emergency?
         </Link>
 
         {/* Mobile hamburger */}
@@ -111,7 +111,7 @@ export function Header() {
             onClick={() => setMobileOpen(false)}
             className="bg-secondary text-white px-8 py-3 uppercase text-[14px] font-bold tracking-[0.15em] font-body hover:opacity-90 transition-all mt-2"
           >
-            Request Service
+            Emergency?
           </Link>
         </div>
       )}

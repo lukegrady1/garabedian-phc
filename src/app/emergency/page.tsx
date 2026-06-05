@@ -119,21 +119,13 @@ export default function EmergencyPage() {
               When an emergency strikes, every minute counts. Our on-call
               technicians are ready to respond immediately.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href={siteConfig.phoneHref}
-                className="bg-primary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-8 md:px-10 py-4 md:py-5 uppercase hover:opacity-90 transition-all inline-flex items-center justify-center gap-3"
-              >
-                <Phone className="w-5 h-5 md:w-6 md:h-6" />
-                Call {siteConfig.phone}
-              </a>
-              <Link
-                href="/contact"
-                className="border-2 border-white text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-8 md:px-10 py-4 md:py-5 uppercase hover:bg-white hover:text-secondary transition-all text-center"
-              >
-                Send a Request
-              </Link>
-            </div>
+            <a
+              href={siteConfig.phoneHref}
+              className="bg-primary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-8 md:px-10 py-4 md:py-5 uppercase hover:opacity-90 transition-all inline-flex items-center justify-center gap-3"
+            >
+              <Phone className="w-5 h-5 md:w-6 md:h-6" />
+              Call {siteConfig.phone}
+            </a>
           </div>
         </section>
       </FadeIn>
