@@ -97,9 +97,12 @@ export function Footer() {
             href="https://gradydigital.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="uppercase text-[12px] font-bold tracking-[0.15em] font-body text-white/50 hover:text-white transition-colors"
+            className="uppercase text-[12px] font-bold tracking-[0.15em] font-body text-white/50 transition-colors group/credit"
           >
-            Built by Grady Digital
+            Built by{" "}
+            <span className="text-white/70 group-hover/credit:text-surface-variant transition-colors">
+              Grady Digital
+            </span>
           </a>
         </div>
       </div>
@@ -172,9 +175,12 @@ export function Footer() {
             href="https://gradydigital.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="uppercase text-[10px] font-bold tracking-[0.1em] font-body text-white/50 hover:text-white transition-colors"
+            className="uppercase text-[10px] font-bold tracking-[0.1em] font-body text-white/50 transition-colors group/credit"
           >
-            Built by Grady Digital
+            Built by{" "}
+            <span className="text-white/70 group-hover/credit:text-surface-variant transition-colors">
+              Grady Digital
+            </span>
           </a>
         </div>
       </div>

@@ -148,15 +148,24 @@ export default function ReviewsPage() {
         <div className="h-[24px]" />
         <ScrollRow reviews={bottomRowReviews} direction="right" />
 
-        <div className="mt-10 md:mt-16 flex justify-center">
+        <div className="mt-10 md:mt-16 flex flex-col sm:flex-row justify-center gap-4">
           <a
             href={siteConfig.googleReviewLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-12 py-6 uppercase hover:opacity-90 transition-all flex items-center gap-4"
+            className="bg-secondary text-white font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold px-8 md:px-12 py-4 md:py-6 uppercase hover:opacity-90 transition-all flex items-center justify-center gap-4"
           >
             Read More Reviews
-            <ArrowRight className="w-6 h-6" />
+            <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
+          </a>
+          <a
+            href={siteConfig.googleWriteReviewLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-primary text-primary font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold px-8 md:px-12 py-4 md:py-6 uppercase hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-4"
+          >
+            Leave a Review
+            <Star className="w-5 h-5 md:w-6 md:h-6" />
           </a>
         </div>
       </section>

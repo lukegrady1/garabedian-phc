@@ -1,5 +1,6 @@
 import { Star } from "lucide-react";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { siteConfig } from "@/lib/site-config";
 
 const testimonials = [
   {
@@ -58,6 +59,19 @@ export function Testimonials() {
             </FadeIn>
           ))}
         </div>
+        <FadeIn>
+          <div className="mt-10 md:mt-16 flex justify-center">
+            <a
+              href={siteConfig.googleWriteReviewLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-surface-variant text-white font-headline text-[16px] md:text-[20px] leading-[1.2] font-semibold px-8 py-4 uppercase hover:bg-surface-variant hover:text-primary transition-all flex items-center gap-3"
+            >
+              Leave a Review
+              <Star className="w-5 h-5" />
+            </a>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );

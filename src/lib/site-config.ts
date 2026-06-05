@@ -48,6 +48,7 @@ export const siteConfig = {
   founderStory: "Founded by Hagop Garabedian",
   primaryDomain: process.env.NEXT_PUBLIC_PRIMARY_DOMAIN || "",
   googleReviewLink: process.env.NEXT_PUBLIC_GOOGLE_REVIEW_LINK || "#",
+  googleWriteReviewLink: "https://search.google.com/local/writereview?placeid=ChIJb-pZpo8G5IkR6-gkX-i8GUg",
   nav: [
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
