@@ -75,7 +75,7 @@ export function Footer() {
             Quick Links
           </h4>
           <nav className="flex flex-col gap-2">
-            <Link href="/contact" className="font-body text-[16px] leading-[1.5] text-white/70 hover:text-white transition-all underline">
+            <Link href="/emergency" className="font-body text-[16px] leading-[1.5] text-white/70 hover:text-white transition-all underline">
               Emergency Service
             </Link>
             <Link href="/privacy" className="font-body text-[16px] leading-[1.5] text-white/70 hover:text-white transition-all underline">
@@ -159,7 +159,7 @@ export function Footer() {
               Quick Links
             </h4>
             <nav className="flex flex-col gap-1 font-body text-[12px] text-white/70">
-              <Link href="/contact" className="hover:text-white underline">Emergency Service</Link>
+              <Link href="/emergency" className="hover:text-white underline">Emergency Service</Link>
               <Link href="/privacy" className="hover:text-white underline">Privacy Policy</Link>
               <Link href="/terms" className="hover:text-white underline">Terms of Service</Link>
             </nav>

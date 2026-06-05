@@ -188,12 +188,12 @@ export default function ReviewsPage() {
               >
                 Schedule Service
               </Link>
-              <a
-                href={siteConfig.emergencyPhoneHref}
+              <Link
+                href="/emergency"
                 className="border-2 border-white text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:bg-white hover:text-primary transition-all"
               >
                 Emergency Help
-              </a>
+              </Link>
             </div>
           </div>
         </section>

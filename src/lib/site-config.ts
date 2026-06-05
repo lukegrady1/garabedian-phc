@@ -47,7 +47,7 @@ export const siteConfig = {
   founded: "1916",
   founderStory: "Founded by Hagop Garabedian",
   primaryDomain: process.env.NEXT_PUBLIC_PRIMARY_DOMAIN || "",
-  googleReviewLink: process.env.NEXT_PUBLIC_GOOGLE_REVIEW_LINK || "#",
+  googleReviewLink: "https://www.google.com/search?sca_esv=453cbd3ddf1993fe&hl=en-US&gl=us&sxsrf=ANbL-n5Zmv-iRzNZLSo_x191xSwUe7MgYw:1780695595428&si=AL3DRZHrmvnFAVQPOO2Bzhf8AX9KZZ6raUI_dT7DG_z0kV2_x4Wkn88ql-pgjfbd7kMUr4qLnpXx3EM-U5ILeHHEo8PehCzlfgCGzfgJH02fOoqhV9HU9ZPL8Y1yBpFFdZHTh6lyG3s0mQC4gwPHQ81vz4t1RdZ1cGw0vGouTWp9R9TBpW1_VFc%3D&q=Garabedian+Plumbing+%26+Heating+Inc.+Reviews&sa=X&ved=2ahUKEwiupqyDiPGUAxUVm4kEHVrdLzsQ0bkNegQIJRAH&cshid=1780695618274074&biw=1912&bih=956&dpr=1",
   googleWriteReviewLink: "https://search.google.com/local/writereview?placeid=ChIJb-pZpo8G5IkR6-gkX-i8GUg",
   nav: [
     { label: "Home", href: "/" },
