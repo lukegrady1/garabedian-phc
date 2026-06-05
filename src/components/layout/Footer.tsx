@@ -63,9 +63,12 @@ export function Footer() {
             <p>{siteConfig.hours.weekday}</p>
             <p>{siteConfig.hours.saturday}</p>
             <p>{siteConfig.hours.sunday}</p>
-            <p className="mt-4 font-bold text-surface-variant uppercase">
+            <Link href="/emergency" className="mt-4 font-bold text-surface-variant uppercase block hover:text-white transition-colors">
               {siteConfig.hours.emergency}
-            </p>
+            </Link>
+            <a href={siteConfig.phoneHref} className="font-headline text-[20px] leading-[1.2] font-semibold text-white hover:text-surface-variant transition-colors mt-1 block">
+              {siteConfig.phone}
+            </a>
           </div>
         </div>
 
@@ -151,9 +154,12 @@ export function Footer() {
             <div className="font-body text-[12px] leading-[1.6] text-white/70">
               <p>Mon–Fri: 8–4:30 PM</p>
               <p>Sat–Sun: Closed</p>
-              <p className="mt-2 font-bold text-surface-variant uppercase text-[11px]">
+              <Link href="/emergency" className="mt-2 font-bold text-surface-variant uppercase text-[11px] block hover:text-white transition-colors">
                 24/7 Emergency
-              </p>
+              </Link>
+              <a href={siteConfig.phoneHref} className="font-headline text-[14px] font-semibold text-white hover:text-surface-variant transition-colors mt-1 block">
+                {siteConfig.phone}
+              </a>
             </div>
             <h4 className="font-headline text-[14px] font-semibold uppercase border-b border-white/20 pb-1 mb-2 mt-4">
               Quick Links
