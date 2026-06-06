@@ -6,7 +6,7 @@ export const siteConfig = {
   phoneHref: "tel:5087574803",
   emergencyPhone: "508-757-4803",
   emergencyPhoneHref: "tel:5087574803",
-  email: "info@garabedianphc.com",
+  email: "info@garabedianplumbing.com",
   address: {
     street: "208 Austin Street",
     city: "Worcester",
