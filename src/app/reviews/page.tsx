@@ -186,7 +186,7 @@ export default function ReviewsPage() {
                 href="/contact"
                 className="bg-secondary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:opacity-90 transition-all"
               >
-                Schedule Service
+                Request Service
               </Link>
               <Link
                 href="/emergency"

@@ -174,7 +174,7 @@ export default function GalleryPage() {
                 href="/contact"
                 className="bg-secondary text-white px-10 py-4 font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold uppercase hover:opacity-90 transition-opacity"
               >
-                Request a Quote
+                Request Service
               </Link>
               <a
                 href={siteConfig.phoneHref}

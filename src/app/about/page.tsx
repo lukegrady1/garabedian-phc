@@ -224,7 +224,7 @@ export default function AboutPage() {
               href="/contact"
               className="bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-5 uppercase hover:opacity-90 transition-all"
             >
-              Schedule Your Visit
+              Request Service
             </Link>
             <Link
               href="/services"

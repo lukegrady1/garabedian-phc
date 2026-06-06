@@ -40,7 +40,7 @@ export const siteConfig = {
   },
   stats: {
     years: "40+",
-    projects: "1,428",
+    projects: "206",
     satisfaction: "100%",
     rating: "4.2",
   },
