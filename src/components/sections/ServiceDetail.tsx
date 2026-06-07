@@ -46,9 +46,9 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
       <FadeIn>
         <section className="w-full bg-surface py-[48px] md:py-[80px] px-[20px] md:px-[40px]">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
-            <div className="md:col-span-5">
+            <div className="md:col-span-5 order-2 md:order-1">
               <div className="border-2 border-primary p-1">
-                <div className="relative aspect-[4/5]">
+                <div className="relative aspect-[3/2] sm:aspect-video md:aspect-[4/5]">
                   <Image
                     src={withBasePath(service.introImage)}
                     alt={service.introImageAlt}
@@ -59,7 +59,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-7 flex flex-col gap-6">
+            <div className="md:col-span-7 order-1 md:order-2 flex flex-col gap-6">
               <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase text-primary">
                 {service.name} Done Right, Since 1916
               </h2>
