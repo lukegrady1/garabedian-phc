@@ -132,9 +132,9 @@ export function Footer() {
           <Image
             src={withBasePath("/images/shared/logo.png")}
             alt={siteConfig.businessName}
-            width={180}
-            height={60}
-            className="h-[50px] w-auto object-contain"
+            width={240}
+            height={80}
+            className="h-[80px] w-auto object-contain"
           />
           <p className="font-body text-[13px] leading-[1.5] text-white/70 text-center">
             Reliable plumbing, heating, and cooling since 1916.
