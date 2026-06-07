@@ -13,9 +13,9 @@ const items = [
 
 export function TrustStrip() {
   return (
-    <section className="w-full bg-primary py-4 md:py-12 border-y-2 border-primary overflow-hidden">
+    <section className="w-full bg-primary py-4 lg:py-12 border-y-2 border-primary overflow-hidden">
       {/* Desktop: static row */}
-      <div className="hidden md:block max-w-[1200px] mx-auto px-[40px]">
+      <div className="hidden lg:block max-w-[1200px] mx-auto px-[40px]">
         <FadeIn>
           <div className="flex flex-wrap justify-between items-center gap-y-6 text-on-primary">
             <div className="flex items-center gap-2">
@@ -37,7 +37,7 @@ export function TrustStrip() {
       </div>
 
       {/* Mobile: scrolling ticker */}
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <div className="flex animate-scroll-left w-max gap-8 text-on-primary">
           {[...Array(2)].map((_, copyIdx) => (
             <div key={copyIdx} className="flex items-center gap-8 shrink-0">

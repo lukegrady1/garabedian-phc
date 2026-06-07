@@ -1,6 +1,6 @@
 export const siteConfig = {
   businessName: "Garabedian Plumbing, Heating & Cooling",
-  tagline: "When it breaks, you call Garabedian.",
+  tagline: "Worcester's Trusted Plumber, Heating & Cooling Experts.",
   trade: "Plumbing, Heating & Cooling",
   phone: "508-757-4803",
   phoneHref: "tel:5087574803",

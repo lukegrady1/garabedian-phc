@@ -1,4 +1,5 @@
-import { Star } from "lucide-react";
+import Link from "next/link";
+import { Star, ArrowRight } from "lucide-react";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { siteConfig } from "@/lib/site-config";
 
@@ -60,12 +61,19 @@ export function Testimonials() {
           ))}
         </div>
         <FadeIn>
-          <div className="mt-10 md:mt-16 flex justify-center">
+          <div className="mt-10 md:mt-16 flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              href="/reviews"
+              className="bg-secondary text-white font-headline text-[16px] md:text-[20px] leading-[1.2] font-semibold px-8 py-4 uppercase hover:opacity-90 transition-opacity flex items-center justify-center gap-3 group"
+            >
+              See More Reviews
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
             <a
               href={siteConfig.googleWriteReviewLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-surface-variant text-white font-headline text-[16px] md:text-[20px] leading-[1.2] font-semibold px-8 py-4 uppercase hover:bg-surface-variant hover:text-primary transition-all flex items-center gap-3"
+              className="border-2 border-surface-variant text-white font-headline text-[16px] md:text-[20px] leading-[1.2] font-semibold px-8 py-4 uppercase hover:bg-surface-variant hover:text-primary transition-all flex items-center justify-center gap-3"
             >
               Leave a Review
               <Star className="w-5 h-5" />

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone } from "lucide-react";
+import { Phone, ArrowRight } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
@@ -95,12 +95,21 @@ export default function ServicesPage() {
                   </div>
                 </li>
               </ul>
-              <Link
-                href="/contact"
-                className="bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors"
-              >
-                Request Plumbing Estimate
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/services/plumbing"
+                  className="inline-flex items-center justify-center gap-2 bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors group"
+                >
+                  Explore Plumbing
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center border-2 border-primary text-primary font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:bg-primary hover:text-white transition-all"
+                >
+                  Request Estimate
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -152,12 +161,21 @@ export default function ServicesPage() {
                   </p>
                 </div>
               </div>
-              <Link
-                href="/contact"
-                className="border-2 border-white text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:bg-white hover:text-primary transition-all"
-              >
-                Request Heating Estimate
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/services/heating"
+                  className="inline-flex items-center justify-center gap-2 bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors group"
+                >
+                  Explore Heating
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center border-2 border-white text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:bg-white hover:text-primary transition-all"
+                >
+                  Request Estimate
+                </Link>
+              </div>
             </div>
             <div className="md:col-span-5">
               <div className="border-2 border-current p-1 text-white">
@@ -226,12 +244,21 @@ export default function ServicesPage() {
                   </p>
                 </div>
               </div>
-              <Link
-                href="/contact"
-                className="bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors"
-              >
-                Request AC Estimate
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/services/air-conditioning"
+                  className="inline-flex items-center justify-center gap-2 bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors group"
+                >
+                  Explore Air Conditioning
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center border-2 border-primary text-primary font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:bg-primary hover:text-white transition-all"
+                >
+                  Request Estimate
+                </Link>
+              </div>
             </div>
           </div>
         </section>

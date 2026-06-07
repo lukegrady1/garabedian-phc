@@ -7,15 +7,15 @@ import { FadeIn } from "@/components/motion/FadeIn";
 export function Hero() {
   return (
     <section className="w-full bg-surface px-[20px] md:px-[40px] py-[48px] md:py-[80px] border-b-2 border-outline">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
-        <FadeIn className="md:col-span-7 flex flex-col gap-6">
-          <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] text-primary leading-none uppercase font-extrabold tracking-[-0.02em]">
-            When it breaks, you call Garabedian.
+      <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-[24px] lg:gap-[24px] items-center">
+        <FadeIn className="lg:col-span-7 flex flex-col gap-6">
+          <h1 className="font-headline text-[36px] sm:text-[48px] lg:text-[80px] text-primary leading-none uppercase font-extrabold tracking-[-0.02em]">
+            Worcester{"'"}s Trusted Plumber, Heating &amp; Cooling Experts.
           </h1>
           <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-on-surface-variant max-w-xl">
-            Worcester County{"'"}s trusted name in plumbing, heating, and cooling
-            for over 100 years. Three generations of licensed professionals
-            serving homes and businesses across Central Massachusetts.
+            Garabedian Plumbing has served Worcester County for over 100 years.
+            Three generations of licensed professionals serving homes and
+            businesses across Central Massachusetts.
           </p>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4">
             <Link
@@ -28,7 +28,7 @@ export function Hero() {
               href="/emergency"
               className="border-2 border-primary text-primary px-8 py-3 md:px-10 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:bg-primary hover:text-white transition-colors"
             >
-              Emergency? Call Now
+              Emergency Service
             </Link>
           </div>
           <a
@@ -43,13 +43,13 @@ export function Hero() {
             </span>
           </a>
         </FadeIn>
-        <FadeIn className="md:col-span-5" delay={0.2}>
+        <FadeIn className="lg:col-span-5 w-full max-w-[440px] lg:max-w-none mx-auto" delay={0.2}>
           <div className="border-[8px] md:border-[12px] border-primary w-full aspect-square relative bg-surface-variant overflow-hidden">
             <Image
               src={withBasePath("/images/home/hero-furnace-tech.jpg")}
               alt="A professional plumbing technician inspecting a modern furnace"
               fill
-              sizes="(max-width: 768px) 100vw, 42vw"
+              sizes="(max-width: 1024px) 440px, 42vw"
               preload={true}
               className="object-cover grayscale-[0.2]"
             />

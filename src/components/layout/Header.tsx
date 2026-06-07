@@ -14,12 +14,13 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[12px] md:px-[40px] bg-primary h-[72px] shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
+    <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-[12px] lg:px-[40px] bg-primary h-[72px] shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
       {/* Left: Logo + Desktop Nav */}
       <div className="flex items-center gap-8">
         <Link
           href="/"
           onClick={() => {
+            setMobileOpen(false);
             if (pathname === "/") {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }
@@ -35,7 +36,7 @@ export function Header() {
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           {siteConfig.nav.map((item) => (
             <Link
               key={item.href}
@@ -57,7 +58,7 @@ export function Header() {
       <div className="flex items-center gap-6">
         <a
           href={siteConfig.phoneHref}
-          className="hidden md:block uppercase text-[16px] font-bold tracking-[0.1em] font-headline text-white"
+          className="hidden lg:block uppercase text-[16px] font-bold tracking-[0.1em] font-headline text-white"
         >
           {siteConfig.phone}
         </a>
@@ -66,13 +67,13 @@ export function Header() {
           href="/emergency"
           className="hidden sm:block bg-secondary text-white px-7 py-3 uppercase text-[14px] font-bold tracking-[0.1em] font-headline hover:opacity-90 transition-all"
         >
-          Emergency?
+          Emergency Service
         </Link>
 
         {/* Mobile hamburger */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden text-white"
+          className="lg:hidden text-white"
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
           {mobileOpen ? <X size={28} /> : <Menu size={28} />}
@@ -81,7 +82,7 @@ export function Header() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 top-[72px] bg-primary z-40 flex flex-col items-center justify-center gap-8 md:hidden">
+        <div className="fixed inset-0 top-[72px] bg-primary z-40 flex flex-col items-center justify-center gap-8 lg:hidden">
           {siteConfig.nav.map((item) => (
             <Link
               key={item.href}
@@ -107,11 +108,11 @@ export function Header() {
           </a>
 
           <Link
-            href="/contact"
+            href="/emergency"
             onClick={() => setMobileOpen(false)}
             className="bg-secondary text-white px-8 py-3 uppercase text-[14px] font-bold tracking-[0.15em] font-body hover:opacity-90 transition-all mt-2"
           >
-            Emergency?
+            Emergency Service
           </Link>
         </div>
       )}

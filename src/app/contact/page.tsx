@@ -31,7 +31,7 @@ export default function ContactPage() {
             Contact Our Team
           </h1>
           <p className="font-body text-[15px] md:text-[18px] leading-[1.6] max-w-2xl mt-4 opacity-90">
-            Expert plumbing, heating, and cooling solutions since 1982.
+            Expert plumbing, heating, and cooling solutions since 1916.
             Professional service for Worcester County homeowners and businesses.
           </p>
         </div>

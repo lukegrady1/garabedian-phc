@@ -66,7 +66,10 @@ export function Footer() {
             <p className="mt-4 font-bold text-surface-variant uppercase">
               {siteConfig.hours.emergency}
             </p>
-            <a href={siteConfig.phoneHref} className="font-headline text-[20px] leading-[1.2] font-semibold text-white hover:text-surface-variant transition-colors mt-1 block">
+            <a
+              href={siteConfig.phoneHref}
+              className="inline-block bg-secondary text-white font-headline text-[22px] leading-[1.2] font-bold tracking-[0.02em] px-4 py-2 mt-2 hover:opacity-90 transition-opacity"
+            >
               {siteConfig.phone}
             </a>
           </div>
@@ -88,6 +91,18 @@ export function Footer() {
               Terms of Service
             </Link>
           </nav>
+        </div>
+
+        {/* Map */}
+        <div className="col-span-4 mt-12 flex justify-center">
+          <iframe
+            title="Garabedian Plumbing & Heating location on Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.766433365285!2d-71.82141712335424!3d42.26216017120219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4068fa659ea6f%3A0x4819bce85f24e8eb!2sGarabedian%20Plumbing%20%26%20Heating%20Inc.!5e0!3m2!1sen!2sus!4v1780856738599!5m2!1sen!2sus"
+            className="w-full max-w-[760px] h-[320px] border-0 grayscale-[0.15]"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
         </div>
 
         {/* Bottom Bar */}
@@ -157,7 +172,10 @@ export function Footer() {
               <p className="mt-2 font-bold text-surface-variant uppercase text-[11px]">
                 24/7 Emergency
               </p>
-              <a href={siteConfig.phoneHref} className="font-headline text-[14px] font-semibold text-white hover:text-surface-variant transition-colors mt-1 block">
+              <a
+                href={siteConfig.phoneHref}
+                className="inline-block bg-secondary text-white font-headline text-[15px] font-bold tracking-[0.02em] px-3 py-1.5 mt-1.5 hover:opacity-90 transition-opacity"
+              >
                 {siteConfig.phone}
               </a>
             </div>
@@ -171,6 +189,16 @@ export function Footer() {
             </nav>
           </div>
         </div>
+
+        {/* Map */}
+        <iframe
+          title="Garabedian Plumbing & Heating location on Google Maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.766433365285!2d-71.82141712335424!3d42.26216017120219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e4068fa659ea6f%3A0x4819bce85f24e8eb!2sGarabedian%20Plumbing%20%26%20Heating%20Inc.!5e0!3m2!1sen!2sus!4v1780856738599!5m2!1sen!2sus"
+          className="w-full h-[220px] border-0 grayscale-[0.15]"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
 
         {/* Bottom Bar */}
         <div className="pt-4 border-t border-white/10 flex flex-col items-center gap-2 text-center">
