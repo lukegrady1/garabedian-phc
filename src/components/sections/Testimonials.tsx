@@ -2,27 +2,7 @@ import Link from "next/link";
 import { Star, ArrowRight } from "lucide-react";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { siteConfig } from "@/lib/site-config";
-
-const testimonials = [
-  {
-    quote:
-      "Garabedian showed up within 2 hours of my call about a burst pipe. Fast, clean, and the price was exactly what they quoted.",
-    author: "Michael S.",
-    location: "Grafton",
-  },
-  {
-    quote:
-      "Finally a crew that actually answers the phone. They fixed our A/C during a 95-degree week. True lifesavers.",
-    author: "Sarah J.",
-    location: "Worcester",
-  },
-  {
-    quote:
-      "Professional, licensed, and local. They've handled our plumbing for years and we wouldn't call anyone else.",
-    author: "David L.",
-    location: "Holden",
-  },
-];
+import { featuredReviews } from "@/lib/reviews-data";
 
 function Stars() {
   return (
@@ -43,19 +23,19 @@ export function Testimonials() {
             What Neighbors Say
           </h2>
         </FadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
-          {testimonials.map((testimonial, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px] items-stretch">
+          {featuredReviews.map((review, i) => (
             <FadeIn
-              key={testimonial.author}
-              className="bg-primary/50 p-5 md:p-8 border-l-4 border-surface-variant"
+              key={review.name}
+              className="bg-primary/50 p-5 md:p-8 border-l-4 border-surface-variant flex flex-col"
               delay={i * 0.1}
             >
               <Stars />
-              <p className="font-body text-[15px] md:text-[18px] leading-[1.6] italic mb-6">
-                &ldquo;{testimonial.quote}&rdquo;
+              <p className="font-body text-[15px] md:text-[17px] leading-[1.6] italic mb-6 flex-grow">
+                &ldquo;{review.quote}&rdquo;
               </p>
               <p className="font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase text-surface-variant">
-                &mdash; {testimonial.author}, {testimonial.location}
+                &mdash; {review.name}
               </p>
             </FadeIn>
           ))}

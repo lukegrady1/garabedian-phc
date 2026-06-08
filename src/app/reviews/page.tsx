@@ -4,76 +4,26 @@ import Link from "next/link";
 import { Star, ArrowRight } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { reviews as allReviews, type Review } from "@/lib/reviews-data";
 
-const topRowReviews = [
-  {
-    quote:
-      '"Garabedian showed up within an hour of my calling about a burst pipe in the basement. Professional, clean, and explained exactly what went wrong."',
-    name: "Robert Harrison",
-    location: "Auburn, MA",
-  },
-  {
-    quote:
-      '"Excellent HVAC installation. The team was punctual and very respectful of our home. Our new high-efficiency heating system is working perfectly."',
-    name: "Sarah Jenkins",
-    location: "Worcester, MA",
-  },
-  {
-    quote:
-      '"I\'ve been using Garabedian for years for both my rental properties and my own home. They are the only plumbers I trust."',
-    name: "Mark Thompson",
-    location: "Shrewsbury, MA",
-  },
-];
+const half = Math.ceil(allReviews.length / 2);
+const topRowReviews = allReviews.slice(0, half);
+const bottomRowReviews = allReviews.slice(half);
 
-const bottomRowReviews = [
-  {
-    quote:
-      '"Friendly service and very thorough. They diagnosed a furnace issue that two other companies missed. I can\'t thank them enough."',
-    name: "Elizabeth Vance",
-    location: "Holden, MA",
-  },
-  {
-    quote:
-      '"Best plumbing company in Central Mass. They handle everything from leaky faucets to complex commercial units with expertise."',
-    name: "Gregory Chen",
-    location: "Millbury, MA",
-  },
-  {
-    quote:
-      '"Professionalism at its finest. From the dispatcher to the technician, everyone was helpful and clear about costs."',
-    name: "Linda Peters",
-    location: "Leicester, MA",
-  },
-];
-
-function ReviewCard({
-  quote,
-  name,
-  location,
-}: {
-  quote: string;
-  name: string;
-  location: string;
-}) {
+function ReviewCard({ quote, name }: Review) {
   return (
-    <div className="bg-surface border-2 border-primary p-4 md:p-8 flex flex-col w-[260px] md:w-[400px] shrink-0">
-      <div className="flex gap-0.5 text-primary mb-3 md:mb-6">
+    <div className="bg-surface border-2 border-primary p-4 md:p-8 flex flex-col w-[280px] md:w-[400px] h-[300px] md:h-[360px] shrink-0">
+      <div className="flex gap-0.5 text-primary mb-3 md:mb-5">
         {[...Array(5)].map((_, i) => (
           <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-current" />
         ))}
       </div>
-      <p className="font-body text-[14px] md:text-[18px] leading-[1.5] md:leading-[1.6] italic mb-4 md:mb-8 flex-grow text-primary">
-        {quote}
+      <p className="font-body text-[14px] md:text-[16px] leading-[1.5] md:leading-[1.6] italic overflow-hidden line-clamp-9 md:line-clamp-8 text-primary">
+        &ldquo;{quote}&rdquo;
       </p>
-      <div>
-        <p className="font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary">
-          {name}
-        </p>
-        <p className="font-body text-[10px] md:text-[12px] leading-[1.0] tracking-[0.15em] font-bold uppercase opacity-60 text-primary">
-          {location}
-        </p>
-      </div>
+      <p className="font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary mt-auto pt-4">
+        {name}
+      </p>
     </div>
   );
 }
@@ -82,7 +32,7 @@ function ScrollRow({
   reviews,
   direction,
 }: {
-  reviews: typeof topRowReviews;
+  reviews: Review[];
   direction: "left" | "right";
 }) {
   const animationClass =
@@ -93,7 +43,10 @@ function ScrollRow({
 
   return (
     <div className="pause-on-hover">
-      <div className={`flex ${animationClass} w-max gap-[24px] px-[40px]`}>
+      <div
+        className={`flex ${animationClass} w-max gap-[24px] px-[40px]`}
+        style={{ animationDuration: "160s" }}
+      >
         {Array.from({ length: copies }).map((_, copyIdx) => (
           <div key={copyIdx} className="flex gap-[24px]">
             {reviews.map((review) => (
@@ -148,24 +101,24 @@ export default function ReviewsPage() {
         <div className="h-[24px]" />
         <ScrollRow reviews={bottomRowReviews} direction="right" />
 
-        <div className="mt-10 md:mt-16 flex flex-col sm:flex-row justify-center gap-4">
+        <div className="mt-10 md:mt-16 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 md:gap-4 max-w-[280px] sm:max-w-none mx-auto px-[20px] sm:px-0">
           <a
             href={siteConfig.googleReviewLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary text-white font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold px-8 md:px-12 py-4 md:py-6 uppercase hover:opacity-90 transition-all flex items-center justify-center gap-4"
+            className="bg-secondary text-white font-headline text-[15px] md:text-[24px] leading-[1.2] font-semibold px-6 md:px-12 py-3 md:py-6 uppercase hover:opacity-90 transition-all flex items-center justify-center gap-2 md:gap-4"
           >
             Read More Reviews
-            <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
+            <ArrowRight className="w-4 h-4 md:w-6 md:h-6" />
           </a>
           <a
             href={siteConfig.googleWriteReviewLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="border-2 border-primary text-primary font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold px-8 md:px-12 py-4 md:py-6 uppercase hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-4"
+            className="border-2 border-primary text-primary font-headline text-[15px] md:text-[24px] leading-[1.2] font-semibold px-6 md:px-12 py-3 md:py-6 uppercase hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2 md:gap-4"
           >
             Leave a Review
-            <Star className="w-5 h-5 md:w-6 md:h-6" />
+            <Star className="w-4 h-4 md:w-6 md:h-6" />
           </a>
         </div>
       </section>
