@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import {
   Phone,
   AlertCircle,
@@ -10,7 +9,6 @@ import {
   Award,
 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
-import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { ContactForm } from "@/components/forms/ContactForm";
@@ -139,20 +137,6 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Map Placeholder */}
-          <div className="border-4 border-primary grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden group h-[300px] relative">
-            <Image
-              src={withBasePath("/images/contact/worcester-map.jpg")}
-              alt="Map of Worcester Massachusetts"
-              fill
-              className="object-cover"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-primary/20 group-hover:bg-transparent transition-colors">
-              <div className="bg-primary text-white px-4 py-2 uppercase text-[12px] font-bold tracking-[0.15em] font-body">
-                View Main Office
-              </div>
-            </div>
-          </div>
         </FadeIn>
       </section>
 

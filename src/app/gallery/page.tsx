@@ -34,7 +34,7 @@ function GalleryItem({
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+        className="object-cover md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
       />
       <div className="absolute bottom-0 right-0 bg-primary text-white py-1 px-3 font-body text-[10px] uppercase tracking-[0.1em] font-bold z-10">
         {town}
@@ -71,12 +71,12 @@ export default function GalleryPage() {
               Plumbing
             </h2>
             <div className="h-1 bg-primary w-full mt-2 mb-8" />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[24px]">
               <GalleryItem
                 src="/images/gallery/plumbing-auburn.jpg"
                 alt="Professional plumbing"
                 town="Auburn, MA"
-                className="aspect-square"
+                className="aspect-[16/10] md:aspect-square col-span-2 md:col-span-1"
               />
               <GalleryItem
                 src="/images/gallery/pex-tubing-worcester.jpg"
@@ -107,7 +107,7 @@ export default function GalleryPage() {
               Heating
             </h2>
             <div className="h-1 bg-primary w-full mt-2 mb-8" />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+            <div className="grid grid-cols-2 gap-3 md:gap-[24px]">
               <GalleryItem
                 src="/images/gallery/boiler-system-millbury.jpg"
                 alt="Boiler system"
@@ -134,12 +134,12 @@ export default function GalleryPage() {
               Air Conditioning
             </h2>
             <div className="h-1 bg-primary w-full mt-2 mb-8" />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[24px]">
               <GalleryItem
                 src="/images/gallery/ac-condenser-holden.jpg"
                 alt="AC condenser"
                 town="Holden, MA"
-                className="aspect-square"
+                className="aspect-[16/10] md:aspect-square col-span-2 md:col-span-1"
               />
               <GalleryItem
                 src="/images/gallery/mini-split-boylston.jpg"
