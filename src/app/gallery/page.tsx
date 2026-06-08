@@ -107,18 +107,18 @@ export default function GalleryPage() {
               Heating
             </h2>
             <div className="h-1 bg-primary w-full mt-2 mb-8" />
-            <div className="grid grid-cols-2 gap-3 md:gap-[24px]">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[24px]">
               <GalleryItem
                 src="/images/gallery/boiler-system-millbury.jpg"
                 alt="Boiler system"
                 town="Millbury, MA"
-                className="aspect-[4/5] md:col-span-2"
+                className="aspect-[4/5] md:aspect-video md:col-span-2"
               />
               <GalleryItem
                 src="/images/gallery/furnace-control-grafton.jpg"
                 alt="Furnace control"
                 town="Grafton, MA"
-                className="aspect-[4/5]"
+                className="aspect-[4/5] md:aspect-square"
               />
             </div>
           </div>
