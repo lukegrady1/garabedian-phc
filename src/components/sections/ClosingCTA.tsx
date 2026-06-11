@@ -12,13 +12,13 @@ export function ClosingCTA() {
         <div className="flex flex-col md:flex-row items-center gap-6 mt-4">
           <Link
             href="/contact"
-            className="bg-secondary text-on-secondary px-8 py-3 md:px-12 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:opacity-90 transition-all"
+            className="bg-white text-primary px-8 py-3 md:px-12 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:bg-surface-variant transition-colors"
           >
             Request Service
           </Link>
           <Link
             href="/emergency"
-            className="border-2 border-surface-variant text-surface-variant px-8 py-3 md:px-12 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:bg-surface-variant hover:text-primary transition-all"
+            className="bg-secondary text-white px-8 py-3 md:px-12 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:opacity-90 transition-all"
           >
             24/7 Emergency Help
           </Link>

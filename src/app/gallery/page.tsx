@@ -172,7 +172,7 @@ export default function GalleryPage() {
             <div className="flex flex-col md:flex-row justify-center gap-4">
               <Link
                 href="/contact"
-                className="bg-secondary text-white px-10 py-4 font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold uppercase hover:opacity-90 transition-opacity"
+                className="bg-white text-primary px-10 py-4 font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold uppercase hover:bg-surface-variant transition-colors"
               >
                 Request Service
               </Link>

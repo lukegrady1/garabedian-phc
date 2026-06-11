@@ -13,7 +13,8 @@
   --color-surface-container-high: #e3e9ee;
   --color-surface-container-highest: #dde3e8;
   --color-on-surface: #233856;
-  --color-on-surface-variant: #233856;
+  /* Body/secondary text: a lighter navy tint so headings (#233856) outrank body copy. ~6:1 on the light surface (AA). */
+  --color-on-surface-variant: #526077;
   --color-outline: #c2c8cd;
   --color-outline-variant: #c4c6ce;
   --color-background: #f5faff;
@@ -39,6 +40,11 @@
 
 * {
   border-radius: 0 !important;
+}
+
+/* Keep in-page anchor jumps clear of the fixed 72px header */
+html {
+  scroll-padding-top: 88px;
 }
 
 body {

@@ -106,7 +106,7 @@ export default function ReviewsPage() {
             href={siteConfig.googleReviewLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-secondary text-white font-headline text-[15px] md:text-[24px] leading-[1.2] font-semibold px-6 md:px-12 py-3 md:py-6 uppercase hover:opacity-90 transition-all flex items-center justify-center gap-2 md:gap-4"
+            className="bg-primary text-white font-headline text-[15px] md:text-[24px] leading-[1.2] font-semibold px-6 md:px-12 py-3 md:py-6 uppercase hover:opacity-90 transition-all flex items-center justify-center gap-2 md:gap-4"
           >
             Read More Reviews
             <ArrowRight className="w-4 h-4 md:w-6 md:h-6" />
@@ -137,13 +137,13 @@ export default function ReviewsPage() {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
                 href="/contact"
-                className="bg-secondary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:opacity-90 transition-all"
+                className="bg-white text-primary font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:bg-surface-variant transition-colors"
               >
                 Request Service
               </Link>
               <Link
                 href="/emergency"
-                className="border-2 border-white text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:bg-white hover:text-primary transition-all"
+                className="bg-secondary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold px-10 py-5 uppercase hover:opacity-90 transition-all"
               >
                 Emergency Help
               </Link>

@@ -20,13 +20,13 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-4 max-w-[260px] sm:max-w-none">
             <Link
               href="/contact"
-              className="border-2 border-transparent bg-secondary text-on-secondary text-center px-8 py-3 md:px-10 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:opacity-90 transition-colors"
+              className="border-2 border-transparent bg-primary text-white text-center px-8 py-3 md:px-10 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:opacity-90 transition-colors"
             >
               Request Service
             </Link>
             <Link
               href="/emergency"
-              className="border-2 border-primary text-primary text-center px-8 py-3 md:px-10 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:bg-primary hover:text-white transition-colors"
+              className="border-2 border-secondary text-secondary text-center px-8 py-3 md:px-10 md:py-4 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase hover:bg-secondary hover:text-white transition-colors"
             >
               Emergency Service
             </Link>

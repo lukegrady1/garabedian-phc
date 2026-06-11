@@ -44,7 +44,7 @@ export function Testimonials() {
           <div className="mt-10 md:mt-16 flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/reviews"
-              className="bg-secondary text-white font-headline text-[16px] md:text-[20px] leading-[1.2] font-semibold px-8 py-4 uppercase hover:opacity-90 transition-opacity flex items-center justify-center gap-3 group"
+              className="bg-white text-primary font-headline text-[16px] md:text-[20px] leading-[1.2] font-semibold px-8 py-4 uppercase hover:bg-surface-variant transition-colors flex items-center justify-center gap-3 group"
             >
               See More Reviews
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

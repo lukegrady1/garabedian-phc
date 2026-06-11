@@ -222,7 +222,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Link
               href="/contact"
-              className="bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-5 uppercase hover:opacity-90 transition-all"
+              className="bg-white text-primary font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-5 uppercase hover:bg-surface-variant transition-colors"
             >
               Request Service
             </Link>

@@ -98,7 +98,7 @@ export default function ServicesPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/services/plumbing"
-                  className="inline-flex items-center justify-center gap-2 bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors group"
+                  className="inline-flex items-center justify-center gap-2 bg-primary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors group"
                 >
                   Explore Plumbing
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -164,7 +164,7 @@ export default function ServicesPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/services/heating"
-                  className="inline-flex items-center justify-center gap-2 bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors group"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-primary font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:bg-surface-variant transition-colors group"
                 >
                   Explore Heating
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -247,7 +247,7 @@ export default function ServicesPage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/services/air-conditioning"
-                  className="inline-flex items-center justify-center gap-2 bg-secondary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors group"
+                  className="inline-flex items-center justify-center gap-2 bg-primary text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:opacity-90 transition-colors group"
                 >
                   Explore Air Conditioning
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

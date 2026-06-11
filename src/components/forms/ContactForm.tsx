@@ -137,7 +137,7 @@ export function ContactForm({ className }: { className?: string }) {
         {/* Submit */}
         <button
           type="submit"
-          className="w-full bg-secondary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase py-5 hover:brightness-110 transition-colors duration-300"
+          className="w-full bg-primary text-white font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase py-5 hover:opacity-90 transition-opacity duration-300"
         >
           Send Request
         </button>

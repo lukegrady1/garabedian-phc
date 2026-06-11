@@ -142,7 +142,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center bg-secondary text-white px-8 md:px-12 py-4 md:py-5 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase tracking-wider hover:opacity-90 transition-opacity"
+              className="inline-flex items-center justify-center bg-primary text-white px-8 md:px-12 py-4 md:py-5 font-headline text-[18px] md:text-[24px] leading-[1.2] font-semibold uppercase tracking-wider hover:opacity-90 transition-opacity"
             >
               {service.estimateLabel}
             </Link>

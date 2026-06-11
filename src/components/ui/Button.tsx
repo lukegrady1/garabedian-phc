@@ -2,7 +2,8 @@ import Link from "next/link";
 import { cn } from "@/lib/cn";
 
 const variants = {
-  primary: "bg-secondary text-white hover:bg-secondary/90",
+  primary: "bg-primary text-white hover:opacity-90",
+  emergency: "bg-secondary text-white hover:opacity-90",
   secondary:
     "border-2 border-primary text-primary hover:bg-primary hover:text-white",
   white:
