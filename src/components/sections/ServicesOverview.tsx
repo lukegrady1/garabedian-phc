@@ -50,7 +50,7 @@ const services = [
     image: "/images/home/commercial-ac-repair.jpg",
     alt: "Commercial mechanical and HVAC work",
     colSpan: "md:col-span-12",
-    height: "h-[300px]",
+    height: "h-[350px]",
     titleSize: "font-headline text-[20px] md:text-[24px] lg:text-[48px] leading-[1.1] font-bold",
   },
 ];
