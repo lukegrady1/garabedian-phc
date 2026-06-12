@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Phone, Building2 } from "lucide-react";
+import { ArrowLeft, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 import { FadeIn } from "@/components/motion/FadeIn";
@@ -67,12 +67,32 @@ const industries = [
 ];
 
 const clients = [
-  "Worcester Polytechnic Institute",
-  "Reliant Medical Group",
-  "Greater Good Imperial Brewing",
+  "Alden Research Labs",
+  "Allegro Microsystems, LLC",
+  "Affordable Interior Systems (AIS)",
+  "American Antiquarian Society",
+  "Briarwood Community",
+  "Central Coating",
+  "Christopher Heights",
+  "Christopher House",
   "Cold Chain Technologies",
-  "Primetals Technologies",
-  "Exponent Scientific",
+  "Department of Conservation & Recreation (DCR)",
+  "Department of Youth Services (DYS)",
+  "Life Care of Auburn",
+  "Mass State Police",
+  "St Gobain",
+  "Shrewsbury Village",
+  "Sunbridge Healthcare",
+  "Walmart",
+  "Westborough State Hospital",
+  "Worcester Business Center",
+  "Worcester County Food Bank",
+  "Worcester Fitness Center",
+  "Worcester Polytechnic Institute",
+  "United States Postal Service",
+  "UMass Memorial Realty",
+  "YMCA (Greendale & Central Branch)",
+  "You Inc.",
 ];
 
 export default function CommercialPage() {
@@ -201,19 +221,19 @@ export default function CommercialPage() {
               Trusted by well-known institutions, manufacturers, and contractors
               across Worcester County and Central Massachusetts.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+            <ul className="columns-2 lg:columns-3 gap-x-6 md:gap-x-[24px]">
               {clients.map((client) => (
-                <div
+                <li
                   key={client}
-                  className="bg-white/10 border-l-4 border-secondary p-6 flex items-center gap-4"
+                  className="flex items-start gap-2.5 mb-3 break-inside-avoid"
                 >
-                  <Building2 className="w-6 h-6 text-surface-variant shrink-0" />
-                  <span className="font-headline text-[18px] md:text-[20px] leading-[1.2] font-semibold uppercase">
+                  <span className="mt-[7px] w-1.5 h-1.5 bg-secondary shrink-0" />
+                  <span className="font-body text-[13px] md:text-[15px] leading-[1.4] text-white/85">
                     {client}
                   </span>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
       </FadeIn>
