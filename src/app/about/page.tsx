@@ -241,22 +241,25 @@ export default function AboutPage() {
                 stocked and ready to roll, day or night.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+            <div className="flex md:grid md:grid-cols-3 gap-4 md:gap-[24px] overflow-x-auto md:overflow-visible snap-x snap-mandatory -mx-[20px] px-[20px] md:mx-0 md:px-0 pb-4 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
               {fleet.map((van) => (
                 <div
                   key={van.src}
-                  className="border-[6px] border-primary aspect-[4/3] relative bg-surface-variant overflow-hidden group"
+                  className="snap-center shrink-0 w-[82%] sm:w-[55%] md:w-auto border-4 md:border-[6px] border-primary aspect-[4/3] relative bg-surface-variant overflow-hidden group"
                 >
                   <Image
                     src={withBasePath(van.src)}
                     alt={van.alt}
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 82vw, 33vw"
                     className="object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
                   />
                 </div>
               ))}
             </div>
+            <p className="md:hidden text-center font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase text-on-surface-variant/70 mt-4">
+              Swipe to see the fleet →
+            </p>
           </div>
         </section>
       </FadeIn>
