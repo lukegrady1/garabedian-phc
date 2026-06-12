@@ -11,6 +11,21 @@ export const metadata: Metadata = {
   title: "About Us",
 };
 
+const fleet = [
+  {
+    src: "/images/fleet/garabedian-plumbing-heating-van-worcester-ma.jpg",
+    alt: "Garabedian Plumbing & Heating service van in Worcester, MA",
+  },
+  {
+    src: "/images/fleet/garabedian-plumbing-heating-van-central-ma.jpg",
+    alt: "Garabedian Plumbing & Heating service van serving Central Massachusetts",
+  },
+  {
+    src: "/images/fleet/garabedian-plumbing-heating-van-shrewsbury-ma.jpg",
+    alt: "Garabedian Plumbing & Heating service van in Shrewsbury, MA",
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -208,6 +223,39 @@ export default function AboutPage() {
               <p className="font-body text-[16px] leading-[1.5] text-primary">
                 {siteConfig.license}. {siteConfig.epa}. Fully bonded and insured so you never have to worry.
               </p>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* Our Fleet */}
+      <FadeIn>
+        <section className="w-full bg-background py-12 md:py-20 px-[20px] md:px-[40px] border-t-2 border-surface-container-highest">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="text-center mb-10 md:mb-16">
+              <h2 className="font-headline text-[36px] leading-[1.1] md:text-[48px] md:leading-[1.1] font-bold uppercase text-primary">
+                On The Road Since 1916
+              </h2>
+              <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-on-surface-variant max-w-2xl mx-auto mt-4">
+                Our trucks are a familiar sight across Worcester County — fully
+                stocked and ready to roll, day or night.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[24px]">
+              {fleet.map((van) => (
+                <div
+                  key={van.src}
+                  className="border-[6px] border-primary aspect-[4/3] relative bg-surface-variant overflow-hidden group"
+                >
+                  <Image
+                    src={withBasePath(van.src)}
+                    alt={van.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover grayscale-[0.2] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </section>

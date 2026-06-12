@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   Phone,
   AlertCircle,
@@ -9,6 +10,7 @@ import {
   Award,
 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
+import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { ContactForm } from "@/components/forms/ContactForm";
@@ -136,6 +138,22 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+
+          {/* Van — the truck that pulls up to your door */}
+          <figure className="border-2 border-primary aspect-[4/3] relative bg-surface-variant overflow-hidden">
+            <Image
+              src={withBasePath(
+                "/images/fleet/garabedian-plumbing-heating-van-central-ma.jpg",
+              )}
+              alt="Garabedian Plumbing & Heating service van ready to roll across Worcester County"
+              fill
+              sizes="(max-width: 768px) 100vw, 42vw"
+              className="object-cover grayscale-[0.2]"
+            />
+            <figcaption className="absolute bottom-0 left-0 right-0 bg-primary/90 text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold uppercase px-4 py-3">
+              Serving Worcester County since 1916
+            </figcaption>
+          </figure>
 
         </FadeIn>
       </section>
