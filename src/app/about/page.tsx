@@ -29,47 +29,53 @@ const fleet = [
 export default function AboutPage() {
   return (
     <>
-      {/* Hero Section / Bone Band */}
+      {/* Hero Section */}
+      <FadeIn>
+        <section className="w-full bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px]">
+          <div className="max-w-[1200px] mx-auto">
+            <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold text-white uppercase mb-4">
+              About Garabedian <br /> Plumbing & Heating
+            </h1>
+            <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-2xl">
+              Family-owned since 1916. Licensed and insured. Always here when
+              you need us.
+            </p>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* Story */}
       <FadeIn>
         <section className="w-full bg-background py-12 md:py-20 px-[20px] md:px-[40px] border-b-2 border-surface-container-highest">
           <div className="max-w-[1200px] mx-auto">
-            <div>
-              <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold text-primary uppercase mb-8">
-                About Garabedian <br /> Plumbing & Heating
-              </h1>
-              <div className="font-body text-[15px] md:text-[18px] leading-[1.6] text-primary max-w-2xl space-y-6">
-                <p>
-                  For more than 100 years, Garabedian Plumbing & Heating has
-                  kept homes and businesses across Worcester County and Central
-                  Massachusetts running smoothly. Founded in 1916 and now in our
-                  third generation of family ownership, we{"'"}ve built our
-                  reputation the old-fashioned way — by showing up, doing honest
-                  work, and standing behind every job.
-                </p>
-                <p>
-                  We handle it all, from a leaky faucet or clogged drain to full
-                  heating system installations, boiler and water heater
-                  replacements, gas piping, and large commercial design-build
-                  projects. Our technicians are licensed, trained, and equipped
-                  with modern diagnostic tools, but what really sets us apart is
-                  how we treat people. When you call, you reach a real, live
-                  member of our team — day or night. And when an emergency
-                  strikes, our on-call technicians understand that time is of
-                  the essence.
-                </p>
-                <p>
-                  A century in business has taught us that comfort, safety, and
-                  trust matter most. Whether we{"'"}re working in one of the
-                  area{"'"}s oldest buildings or installing the latest
-                  high-efficiency system, our goal is the same: to get the job
-                  done right the first time and leave your home or business
-                  better than we found it.
-                </p>
-                <p className="font-bold">
-                  Family-owned since 1916. Licensed and insured. Always here
-                  when you need us.
-                </p>
-              </div>
+            <div className="font-body text-[15px] md:text-[18px] leading-[1.6] text-primary max-w-2xl space-y-6">
+              <p>
+                For more than 100 years, Garabedian Plumbing & Heating has kept
+                homes and businesses across Worcester County and Central
+                Massachusetts running smoothly. Founded in 1916 and now in our
+                third generation of family ownership, we{"'"}ve built our
+                reputation the old-fashioned way — by showing up, doing honest
+                work, and standing behind every job.
+              </p>
+              <p>
+                We handle it all, from a leaky faucet or clogged drain to full
+                heating system installations, boiler and water heater
+                replacements, gas piping, and large commercial design-build
+                projects. Our technicians are licensed, trained, and equipped
+                with modern diagnostic tools, but what really sets us apart is
+                how we treat people. When you call, you reach a real, live
+                member of our team — day or night. And when an emergency
+                strikes, our on-call technicians understand that time is of the
+                essence.
+              </p>
+              <p>
+                A century in business has taught us that comfort, safety, and
+                trust matter most. Whether we{"'"}re working in one of the
+                area{"'"}s oldest buildings or installing the latest
+                high-efficiency system, our goal is the same: to get the job
+                done right the first time and leave your home or business better
+                than we found it.
+              </p>
             </div>
           </div>
         </section>
