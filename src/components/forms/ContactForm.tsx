@@ -10,6 +10,7 @@ const services = [
   "A/C Maintenance",
   "Water Heater Install",
   "Drain Cleaning",
+  "Commercial / Design-Build",
 ];
 
 const inputStyles =
