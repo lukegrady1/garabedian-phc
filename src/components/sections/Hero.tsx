@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { siteConfig } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 import { FadeIn } from "@/components/motion/FadeIn";
 
@@ -13,7 +12,7 @@ export function Hero() {
             <div className="flex items-center gap-3">
               <span className="h-[3px] w-12 bg-primary shrink-0" />
               <span className="font-body text-[11px] md:text-[13px] leading-none tracking-[0.2em] font-bold uppercase text-primary/80">
-                Master Plumber &middot; Family-Owned Since 1916
+                Family-Owned Since 1916
               </span>
             </div>
             <h1 className="font-headline text-[33px] sm:text-[52px] lg:text-[82px] text-primary leading-[0.95] lg:leading-[0.9] uppercase font-extrabold tracking-[-0.02em] text-balance">
@@ -39,17 +38,6 @@ export function Hero() {
               Emergency Service
             </Link>
           </div>
-          <a
-            href={siteConfig.phoneHref}
-            className="flex items-center gap-2 mt-2"
-          >
-            <span className="font-body text-[12px] leading-none tracking-[0.15em] font-bold text-primary uppercase opacity-70">
-              Immediate Dispatch:
-            </span>
-            <span className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold text-primary">
-              {siteConfig.phone}
-            </span>
-          </a>
         </FadeIn>
         <FadeIn className="lg:col-span-5 w-full max-w-[440px] lg:max-w-none mx-auto" delay={0.2}>
           <div className="border-[6px] md:border-[12px] border-primary w-full aspect-[4/3] relative bg-surface-variant overflow-hidden">

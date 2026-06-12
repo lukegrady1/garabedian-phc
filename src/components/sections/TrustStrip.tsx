@@ -38,7 +38,7 @@ export function TrustStrip() {
 
       {/* Mobile: scrolling ticker */}
       <div className="lg:hidden">
-        <div className="flex animate-scroll-left w-max gap-8 text-on-primary">
+        <div className="flex animate-scroll-left [animation-duration:25s] w-max gap-8 text-on-primary">
           {[...Array(2)].map((_, copyIdx) => (
             <div key={copyIdx} className="flex items-center gap-8 shrink-0">
               {items.map((item, i) => (
