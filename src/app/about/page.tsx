@@ -32,8 +32,8 @@ export default function AboutPage() {
       {/* Hero Section / Bone Band */}
       <FadeIn>
         <section className="w-full bg-background py-12 md:py-20 px-[20px] md:px-[40px] border-b-2 border-surface-container-highest">
-          <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
-            <div className="md:col-span-7">
+          <div className="max-w-[1200px] mx-auto">
+            <div>
               <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold text-primary uppercase mb-8">
                 About Garabedian <br /> Plumbing & Heating
               </h1>
@@ -69,18 +69,6 @@ export default function AboutPage() {
                   Family-owned since 1916. Licensed and insured. Always here
                   when you need us.
                 </p>
-              </div>
-            </div>
-            <div className="md:col-span-5">
-              <div className="relative border-[12px] border-primary aspect-[4/5] overflow-hidden">
-                <Image
-                  src={withBasePath("/images/about/family-crew-portrait.jpg")}
-                  alt="A high-contrast, professional group portrait of a multi-generational family plumbing crew standing confidently in front of a heavy-duty white service van with bold red lettering."
-                  fill
-                  sizes="(max-width: 768px) 100vw, 42vw"
-                  className="object-cover"
-                  preload
-                />
               </div>
             </div>
           </div>
