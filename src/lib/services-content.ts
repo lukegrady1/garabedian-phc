@@ -35,7 +35,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
   plumbing: {
     slug: "plumbing",
     name: "Plumbing",
-    metaTitle: "Plumbing Services in Worcester, MA",
+    metaTitle: "Plumbing, Worcester MA",
     metaDescription:
       "Licensed master plumbers in Worcester, MA. Water heaters, repiping, drain cleaning, fixtures, gas lines, and 24/7 emergency plumbing for Central Massachusetts.",
     heroImage: "/images/services/plumbing-work.jpg",
@@ -96,7 +96,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
   heating: {
     slug: "heating",
     name: "Heating",
-    metaTitle: "Heating & Boiler Services in Worcester, MA",
+    metaTitle: "Heating & Boilers, MA",
     metaDescription:
       "Worcester heating contractor for boilers, furnaces, radiant heat, and oil-to-gas conversions. EPA-certified installs, repairs, and 24/7 emergency heat in Central MA.",
     heroImage: "/images/services/heating-system.jpg",
@@ -157,7 +157,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
   "air-conditioning": {
     slug: "air-conditioning",
     name: "Air Conditioning",
-    metaTitle: "Air Conditioning & Cooling Services in Worcester, MA",
+    metaTitle: "Air Conditioning, MA",
     metaDescription:
       "Worcester AC and cooling experts. Central air, ductless mini-splits, indoor air quality, and fast AC repair for homes and businesses across Central Massachusetts.",
     heroImage: "/images/services/ac-condenser-unit.jpg",

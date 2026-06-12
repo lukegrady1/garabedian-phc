@@ -22,7 +22,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.businessName} | ${siteConfig.serviceArea}`,
+    default: `${siteConfig.businessName} | Worcester & Central MA`,
     template: `%s | ${siteConfig.businessName}`,
   },
   description: `${siteConfig.trade} for ${siteConfig.serviceArea}. Family-owned since ${siteConfig.founded}. ${siteConfig.license}. 24/7 emergency service. Call ${siteConfig.phone}.`,
