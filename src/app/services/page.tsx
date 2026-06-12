@@ -15,29 +15,20 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full h-[409px] min-h-[300px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={withBasePath("/images/services/hero-service-engineering.jpg")}
-            alt="Service Engineering"
-            fill
-            sizes="100vw"
-            className="object-cover grayscale opacity-20"
-            preload
-          />
-        </div>
-        <div className="relative z-10 text-center px-[20px] md:px-[40px]">
-          <FadeIn>
-            <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold uppercase text-primary mb-2">
+      <FadeIn>
+        <section className="w-full bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px]">
+          <div className="max-w-[1200px] mx-auto">
+            <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold text-white uppercase mb-4">
               Services
             </h1>
-            <div className="w-24 h-2 bg-primary mx-auto" />
-            <p className="font-body text-[12px] leading-[1.0] tracking-[0.3em] font-bold uppercase text-on-surface-variant mt-6">
-              Professional Solutions for Home & Industry
+            <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-2xl">
+              Expert plumbing, heating, and cooling for homes and businesses
+              across Worcester County and Central Massachusetts — backed by
+              over 100 years of trusted, licensed craftsmanship.
             </p>
-          </FadeIn>
-        </div>
-      </section>
+          </div>
+        </section>
+      </FadeIn>
 
       {/* Service 1: Plumbing */}
       <FadeIn>
