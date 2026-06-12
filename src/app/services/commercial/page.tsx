@@ -56,14 +56,25 @@ const capabilities = [
   },
 ];
 
-const industries = [
-  "Manufacturing",
-  "Medical Offices",
-  "Breweries",
-  "Schools",
-  "Banks",
-  "Automotive",
-  "Pharmaceutical",
+const contractors = [
+  "Antonelli Construction, Inc.",
+  "Builders Systems, Inc",
+  "Cole Contracting, Inc.",
+  "Cutler Associates Inc.",
+  "Dacon Corporation",
+  "Franklin Realty Advisors",
+  "FW Madigan Company, Inc.",
+  "Inglewood Development Corp.",
+  "Nuwater, Inc.",
+  "RP Masiello, Inc.",
+  "RH White Construction Co. Inc.",
+  "Rubicon Builders",
+  "Shawmut Design & Construction",
+  "VW Builders, Inc.",
+  "JM Coull, Inc.",
+  "Bowdoin Construction Corporation",
+  "Sever Construction, Inc.",
+  "Bald Hill Builders",
 ];
 
 const clients = [
@@ -201,25 +212,32 @@ export default function CommercialPage() {
       <FadeIn>
         <section className="w-full bg-primary text-white py-[48px] md:py-[80px] px-[20px] md:px-[40px]">
           <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-6">
-              Industries We Serve
+            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-2">
+              Contractors We Service
             </h2>
-            <div className="flex flex-wrap gap-3 mb-12 md:mb-16">
-              {industries.map((industry) => (
-                <span
-                  key={industry}
-                  className="border border-white/30 px-4 py-2 font-body text-[12px] md:text-[14px] tracking-[0.15em] font-bold uppercase"
+            <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-3xl mb-8 md:mb-10">
+              We partner with many of the region&apos;s leading general
+              contractors and construction firms.
+            </p>
+            <ul className="columns-2 lg:columns-3 gap-x-6 md:gap-x-[24px] mb-12 md:mb-16">
+              {contractors.map((contractor) => (
+                <li
+                  key={contractor}
+                  className="flex items-start gap-2.5 mb-3 break-inside-avoid"
                 >
-                  {industry}
-                </span>
+                  <span className="mt-[7px] w-1.5 h-1.5 bg-secondary shrink-0" />
+                  <span className="font-body text-[13px] md:text-[15px] leading-[1.4] text-white/85">
+                    {contractor}
+                  </span>
+                </li>
               ))}
-            </div>
+            </ul>
             <h3 className="font-headline text-[24px] sm:text-[28px] md:text-[36px] leading-[1.1] font-bold uppercase mb-2">
               Commercial Clients We&apos;ve Served
             </h3>
             <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-3xl mb-8 md:mb-10">
-              Trusted by well-known institutions, manufacturers, and contractors
-              across Worcester County and Central Massachusetts.
+              Trusted by institutions, manufacturers, and businesses across
+              Worcester County and Central Massachusetts.
             </p>
             <ul className="columns-2 lg:columns-3 gap-x-6 md:gap-x-[24px]">
               {clients.map((client) => (
