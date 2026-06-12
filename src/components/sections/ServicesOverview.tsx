@@ -41,6 +41,18 @@ const services = [
     height: "h-[350px]",
     titleSize: "font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold",
   },
+  {
+    label: "Commercial",
+    title: "Commercial & Design-Build",
+    description:
+      "Concept to construction for commercial and industrial projects across Central Mass.",
+    href: "/services/commercial",
+    image: "/images/home/commercial-ac-repair.jpg",
+    alt: "Commercial mechanical and HVAC work",
+    colSpan: "md:col-span-12",
+    height: "h-[300px]",
+    titleSize: "font-headline text-[20px] md:text-[24px] lg:text-[48px] leading-[1.1] font-bold",
+  },
 ];
 
 export function ServicesOverview() {

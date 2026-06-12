@@ -255,6 +255,85 @@ export default function ServicesPage() {
         </section>
       </FadeIn>
 
+      {/* Service 4: Commercial */}
+      <FadeIn>
+        <section className="bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px] text-white">
+          <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
+            <div className="md:col-span-7 order-2 md:order-1 flex flex-col items-start">
+              <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-white mb-8">
+                Commercial
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 w-full">
+                <div className="bg-white/10 p-6 border-l-4 border-white">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
+                    Design-Build
+                  </h4>
+                  <p className="font-body text-[16px] leading-[1.5] opacity-80">
+                    Concept to plan &amp; spec and through construction with
+                    owners, architects, engineers, and general contractors.
+                  </p>
+                </div>
+                <div className="bg-white/10 p-6 border-l-4 border-white">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
+                    Gas &amp; Process Piping
+                  </h4>
+                  <p className="font-body text-[16px] leading-[1.5] opacity-80">
+                    Low- and high-pressure gas and specialized process piping for
+                    industrial facilities.
+                  </p>
+                </div>
+                <div className="bg-white/10 p-6 border-l-4 border-white">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
+                    Commercial Kitchens
+                  </h4>
+                  <p className="font-body text-[16px] leading-[1.5] opacity-80">
+                    Full plumbing and gas fit-outs for restaurant, institutional,
+                    and commercial kitchens.
+                  </p>
+                </div>
+                <div className="bg-white/10 p-6 border-l-4 border-white">
+                  <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
+                    Service &amp; Repair
+                  </h4>
+                  <p className="font-body text-[16px] leading-[1.5] opacity-80">
+                    Fast commercial service and repair that keeps your facility
+                    running with minimal downtime.
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/services/commercial"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-primary font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:bg-surface-variant transition-colors group"
+                >
+                  Explore Commercial
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center border-2 border-white text-white font-body text-[12px] leading-[1.0] tracking-[0.15em] font-bold px-10 py-4 uppercase hover:bg-white hover:text-primary transition-all"
+                >
+                  Request Estimate
+                </Link>
+              </div>
+            </div>
+            <div className="md:col-span-5 order-1 md:order-2">
+              <div className="border-2 border-current p-1 text-white">
+                <div className="relative aspect-[3/2] md:aspect-[4/5]">
+                  <Image
+                    src={withBasePath("/images/home/commercial-ac-repair.jpg")}
+                    alt="Commercial mechanical and HVAC work"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 42vw"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
       {/* Emergency CTA Band */}
       <FadeIn>
         <section className="bg-surface-container-highest py-10 md:py-16 px-[20px] md:px-[40px] text-center border-y-4 border-primary">

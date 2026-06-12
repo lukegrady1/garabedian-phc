@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Droplets, Flame, Snowflake } from "lucide-react";
+import { Droplets, Flame, Snowflake, Building2 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
@@ -54,9 +54,9 @@ export default function GalleryPage() {
               Project Gallery
             </h1>
             <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-2xl">
-              A visual record of professional plumbing, heating, and air
-              conditioning craftsmanship. No filters, no staged mockups—just
-              real results for our neighbors across Central Massachusetts.
+              A visual record of professional plumbing, heating, air
+              conditioning, and commercial craftsmanship. No filters, no staged
+              mockups—just real results across Central Massachusetts.
             </p>
           </div>
         </section>
@@ -152,6 +152,37 @@ export default function GalleryPage() {
                 alt="Custom ductwork"
                 town="Westborough, MA"
                 className="aspect-square"
+              />
+            </div>
+          </div>
+        </section>
+      </FadeIn>
+
+      {/* Commercial Section */}
+      <FadeIn>
+        <section
+          className="w-full bg-surface-container py-[48px] md:py-[80px] px-[20px] md:px-[40px]"
+          id="commercial"
+        >
+          <div className="max-w-[1200px] mx-auto">
+            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
+              <Building2 className="w-8 h-8 text-primary" />
+              Commercial
+            </h2>
+            <div className="h-1 bg-primary w-full mt-2 mb-8" />
+            {/* NOTE: placeholder images — swap for real commercial project photos. */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[24px]">
+              <GalleryItem
+                src="/images/home/industrial-boiler-system.jpg"
+                alt="Commercial boiler installation"
+                town="Worcester, MA"
+                className="aspect-[16/10] md:aspect-video md:col-span-2"
+              />
+              <GalleryItem
+                src="/images/home/commercial-ac-repair.jpg"
+                alt="Commercial HVAC work"
+                town="Worcester, MA"
+                className="aspect-[4/5] md:aspect-square"
               />
             </div>
           </div>
