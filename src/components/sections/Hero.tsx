@@ -11,15 +11,13 @@ export function Hero() {
         <FadeIn className="lg:col-span-7 flex flex-col gap-6">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <span className="h-[3px] w-12 bg-secondary shrink-0" />
+              <span className="h-[3px] w-12 bg-primary shrink-0" />
               <span className="font-body text-[11px] md:text-[13px] leading-none tracking-[0.2em] font-bold uppercase text-primary/80">
                 Master Plumber &middot; Family-Owned Since 1916
               </span>
             </div>
             <h1 className="font-headline text-[38px] sm:text-[52px] lg:text-[82px] text-primary leading-[0.95] lg:leading-[0.9] uppercase font-extrabold tracking-[-0.02em] text-balance">
-              Worcester{"'"}s Trusted Plumber,{" "}
-              <span className="text-secondary">Heating &amp; Cooling</span>{" "}
-              Experts.
+              Worcester{"'"}s Trusted Plumbing, Heating &amp; Cooling Experts.
             </h1>
           </div>
           <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-on-surface-variant max-w-xl">
