@@ -43,9 +43,9 @@ export default function ServicesPage() {
       <FadeIn>
         <section className="bg-surface-variant py-[48px] md:py-[80px] px-[20px] md:px-[40px] border-t-2 border-primary">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
-            <div className="md:col-span-5 order-2 md:order-1">
+            <div className="md:col-span-5">
               <div className="border-2 border-current p-1 text-primary">
-                <div className="relative aspect-square">
+                <div className="relative aspect-[3/2] md:aspect-square">
                   <Image
                     src={withBasePath("/images/services/plumbing-work.jpg")}
                     alt="Plumbing Work"
@@ -56,7 +56,7 @@ export default function ServicesPage() {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-7 order-1 md:order-2 flex flex-col items-start">
+            <div className="md:col-span-7 flex flex-col items-start">
               <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-primary mb-8">
                 Plumbing
               </h2>
@@ -119,7 +119,7 @@ export default function ServicesPage() {
       <FadeIn>
         <section className="bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px] text-white">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
-            <div className="md:col-span-7 flex flex-col items-start">
+            <div className="md:col-span-7 order-2 md:order-1 flex flex-col items-start">
               <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-white mb-8">
                 Heating
               </h2>
@@ -177,9 +177,9 @@ export default function ServicesPage() {
                 </Link>
               </div>
             </div>
-            <div className="md:col-span-5">
+            <div className="md:col-span-5 order-1 md:order-2">
               <div className="border-2 border-current p-1 text-white">
-                <div className="relative aspect-[4/5]">
+                <div className="relative aspect-[3/2] md:aspect-[4/5]">
                   <Image
                     src={withBasePath("/images/services/heating-system.jpg")}
                     alt="Heating System"
@@ -198,9 +198,9 @@ export default function ServicesPage() {
       <FadeIn>
         <section className="bg-surface-variant py-[48px] md:py-[80px] px-[20px] md:px-[40px] border-t-2 border-primary">
           <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-[24px] items-center">
-            <div className="md:col-span-5 order-2 md:order-1">
+            <div className="md:col-span-5">
               <div className="border-2 border-current p-1 text-primary">
-                <div className="relative aspect-square">
+                <div className="relative aspect-[3/2] md:aspect-square">
                   <Image
                     src={withBasePath("/images/services/ac-condenser-unit.jpg")}
                     alt="Modern residential outdoor air conditioning condenser unit"
@@ -211,7 +211,7 @@ export default function ServicesPage() {
                 </div>
               </div>
             </div>
-            <div className="md:col-span-7 order-1 md:order-2 flex flex-col items-start">
+            <div className="md:col-span-7 flex flex-col items-start">
               <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[80px] md:leading-[1.0] md:tracking-[-0.02em] font-bold md:font-extrabold uppercase text-primary mb-8">
                 Air Conditioning
               </h2>
