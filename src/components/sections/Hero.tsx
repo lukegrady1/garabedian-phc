@@ -20,9 +20,9 @@ export function Hero() {
             </h1>
           </div>
           <p className="font-body text-[15px] md:text-[18px] leading-[1.5] md:leading-[1.6] text-on-surface-variant max-w-xl">
-            Garabedian Plumbing has served Worcester County for over 100 years.
-            Three generations of licensed professionals serving homes and
-            businesses across Central Massachusetts.
+            Garabedian Plumbing has served Worcester County for over 100 years,
+            with four generations of licensed professionals proudly serving homes
+            and businesses across Central Massachusetts.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 md:gap-4 mt-1 md:mt-4 max-w-[260px] sm:max-w-none">
             <Link

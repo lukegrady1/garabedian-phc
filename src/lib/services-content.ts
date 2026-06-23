@@ -15,6 +15,16 @@ export type ServiceContent = {
   heroImageAlt: string;
   /** One-line eyebrow under the hero title */
   tagline: string;
+  /**
+   * Overrides the "{name}" portion of the "{name} Done Right, Since 1916"
+   * intro heading. Defaults to `name` when omitted.
+   */
+  doneRightName?: string;
+  /**
+   * Fully overrides the intro heading text, replacing the
+   * "{name} Done Right, Since 1916" template entirely.
+   */
+  introHeading?: string;
   /** Intro paragraphs shown beside the lead image */
   intro: string[];
   /** Lead image in the intro split */
@@ -40,10 +50,11 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
       "Licensed master plumbers in Worcester, MA. Water heaters, repiping, drain cleaning, fixtures, gas lines, and 24/7 emergency plumbing for Central Massachusetts.",
     heroImage: "/images/services/plumbing-work.jpg",
     heroImageAlt: "Master plumber fitting copper pipe",
-    tagline: "Licensed Master Plumbers Serving Worcester County",
+    tagline: "Plumbing & Gasfitting for Homes and Businesses",
+    doneRightName: "Plumbing & Gasfitting",
     intro: [
-      "From a dripping faucet to a full-house repipe, Garabedian has handled Worcester's plumbing for over 100 years. Our licensed master plumbers diagnose the real problem the first time and fix it to last — no guesswork, no upsell.",
-      "Every job is backed by upfront flat-rate pricing, clean workmanship, and the same family name that has served Central Massachusetts since 1916. Whether it's an emergency leak at 2 a.m. or a planned bathroom upgrade, you get a pro who treats your home like their own.",
+      "From a dripping faucet to a full house repair, or full house re-pipe, Garabedian Plumbing has handled Worcester's gas and plumbing needs for over 100 years. Our technicians diagnose the real problem the first time and fix it to last. No guesswork, no upsell.",
+      "Every job is backed by upfront and honest pricing, clean workmanship, and the same family name that has served Central Massachusetts since 1916. Whether it's an emergency leak at 2 a.m. or a planned bathroom upgrade, you get a pro who treats your home like their own.",
     ],
     introImage: "/images/home/plumbing-pipe-fitting.jpg",
     introImageAlt: "Hands expertly tightening a pipe fitting",
@@ -52,32 +63,32 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
       {
         title: "Water Heaters",
         description:
-          "Installation and repair of high-efficiency traditional and tankless systems, sized right for your household.",
+          "Installation and service of all types of water heaters, including tank-type, tankless, and indirect, as well as all related water, gas, and exhaust piping.",
       },
       {
         title: "Repiping & Pipe Repair",
         description:
-          "Full-scale PEX and copper upgrades, plus fast leak and burst-pipe repair for homes and commercial buildings.",
+          "We are prepared to work with a wide range of piping, including pex, copper, PVC, ABS, cast iron, and steel for all your water, drainage, venting, exhaust, and gas piping needs.",
       },
       {
-        title: "Drain Cleaning",
+        title: "Drain Work",
         description:
-          "High-pressure hydro-jetting and camera inspections that clear obstructed main lines and stubborn clogs.",
+          "Our technicians have the tools to clear local blockages in sinks or toilets as well as to camera pipes and clear main lines so that your drainage system can flow with ease.",
       },
       {
-        title: "Fixtures & Faucets",
+        title: "Fixture Installation",
         description:
-          "Sink, toilet, tub, and faucet installation and replacement with quality fixtures built to last.",
+          "We can supply and install fixtures or install fixtures that you have purchased yourself, including faucets, garbage disposals, toilets, tubs, shower valves, and more.",
       },
       {
-        title: "Sump Pumps & Backflow",
+        title: "Sump Pumps & Flood Alarms",
         description:
-          "Sump pump installation and backflow prevention that protect your basement from flooding and contamination.",
+          "Sump pump and flood alarm or leak detection systems which can help detect and prevent flooding and water damage in your home.",
       },
       {
-        title: "Gas Line Services",
+        title: "Gasfitting",
         description:
-          "Safe gas line installation, extension, and leak detection performed by licensed master plumbers.",
+          "We install pipe, valves, and fittings for new and existing gas systems, including for gas stoves, fireplaces, pool heaters, and more.",
       },
     ],
     signsHeading: "Signs You Need a Plumber",
@@ -104,7 +115,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
     tagline: "Reliable Heat for Worcester Winters",
     intro: [
       "When the temperature drops, you need a heating contractor who answers the phone and shows up. Garabedian installs, services, and repairs boilers, furnaces, and radiant systems across Worcester County — keeping homes and businesses warm through the coldest New England nights.",
-      "Our EPA-certified technicians right-size every system for efficiency and safety, so you spend less on fuel and never worry about a mid-winter breakdown. And if your heat ever fails, our 24/7 emergency crew is ready to restore it fast.",
+      "We assess every system for efficiency and safety, so you spend less on fuel and never worry about a mid-winter breakdown. And if your heat ever fails, our 24/7 emergency crew is ready to restore it fast.",
     ],
     introImage: "/images/home/industrial-boiler-system.jpg",
     introImageAlt: "Industrial boiler system",
@@ -113,12 +124,12 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
       {
         title: "Boiler Systems",
         description:
-          "Expert installation and maintenance for high-pressure steam and hot water boiler configurations.",
+          "Expert installation and maintenance for steam and hydronic systems, both high efficiency and legacy.",
       },
       {
         title: "Furnaces",
         description:
-          "High-efficiency gas furnace installation, repair, and emergency heat-restoration services.",
+          "Service and installation of furnaces running on natural gas, propane, or oil.",
       },
       {
         title: "Radiant Heat",
@@ -126,9 +137,9 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
           "Underfloor hydronic heating solutions for consistent, even, premium thermal comfort.",
       },
       {
-        title: "Oil-to-Gas Conversions",
+        title: "Upgrades",
         description:
-          "Seamless conversions that modernize your property's heating and lower your monthly fuel costs.",
+          "Safe removal and disposal of older systems and provision of new high-efficiency options.",
       },
       {
         title: "Heat Pumps",
@@ -163,8 +174,9 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
     heroImage: "/images/services/ac-condenser-unit.jpg",
     heroImageAlt: "Modern residential outdoor air conditioning condenser unit",
     tagline: "Stay Comfortable All Summer Long",
+    introHeading: "Air Conditioning Done Right,\nso You Stay Cool While It's Hot",
     intro: [
-      "Worcester summers can turn brutal fast. Garabedian keeps your home cool with expertly installed central air, ductless mini-splits, and indoor air quality systems — plus fast, accurate repairs when the heat is on.",
+      "New England summers can turn brutal fast. Garabedian keeps your home cool with expertly installed central air, ductless mini-splits, and indoor air quality systems — plus fast, accurate repairs when the heat is on, and the AC isn't.",
       "We size and install every system for efficiency, quiet operation, and even cooling in every room. From historic homes that can't take ductwork to whole-building commercial systems, our technicians deliver comfort you can count on.",
     ],
     introImage: "/images/home/exterior-ac-unit.jpg",
@@ -179,7 +191,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
       {
         title: "Ductless Mini-Splits",
         description:
-          "Zoned cooling for historic homes and additions without the need for intrusive ductwork.",
+          "Zoned cooling for historic homes and additions without the need for retrofitted ductwork.",
       },
       {
         title: "Indoor Air Quality",
@@ -199,7 +211,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
       {
         title: "Heat Pumps",
         description:
-          "High-efficiency systems that cool in summer and warm your home in the shoulder seasons.",
+          "High-efficiency systems that cool your home in the summer and heat your home in the cooler months.",
       },
     ],
     signsHeading: "Signs Your AC Needs Service",

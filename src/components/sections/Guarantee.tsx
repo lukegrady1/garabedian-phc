@@ -13,10 +13,9 @@ export function Guarantee() {
             The Garabedian Guarantee
           </h2>
           <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-on-surface-variant max-w-2xl">
-            We stand by every weld, every bolt, and every pipe we touch. All our
-            work is backed by a 1-year parts and labor warranty, in addition to
-            manufacturer warranties. We are fully licensed, bonded, and insured
-            up to $2M for your absolute peace of mind.
+            We stand by our work. Our labor and any materials that we supply are
+            warrantied by Garabedian Plumbing, Heating &amp; AC for one year
+            after installation, and we are fully licensed and insured.
           </p>
         </div>
       </FadeIn>

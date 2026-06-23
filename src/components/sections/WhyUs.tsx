@@ -3,21 +3,21 @@ import { FadeIn } from "@/components/motion/FadeIn";
 const reasons = [
   {
     number: "01",
-    title: "Flat-Rate Quotes",
+    title: "Honest Pricing",
     description:
-      "No hourly surprises. You know the exact price before we pick up a tool.",
+      "Competitive hourly time and material or quoted job pricing to keep you informed about costs before the project starts.",
   },
   {
     number: "02",
-    title: "Respect for your home",
+    title: "Reliable",
     description:
-      "Floor protectors, clean workspaces, and total cleanup. We leave it better than we found it.",
+      "We have a team of skilled technicians ready to dispatch every day so that we can respond to your call as quickly as possible.",
   },
   {
     number: "03",
-    title: "Real person answers",
+    title: "Real People",
     description:
-      "No automated loops. You get a local dispatcher who knows the area and the crew.",
+      "Both during and after office hours, you will speak to a local dispatcher who knows the area and the crew.",
   },
 ];
 

@@ -317,7 +317,7 @@ export const reviews: Review[] = [
  * (value/loyalty, fast emergency response, honesty) that fit the homepage cards
  * without being truncated.
  */
-const featuredNames = ["Jim Esposito", "Paul Conner", "Evan B"];
+const featuredNames = ["Jim Esposito", "Paul Conner", "Steve Lafortune"];
 export const featuredReviews: Review[] = featuredNames
   .map((name) => reviews.find((review) => review.name === name))
   .filter((review): review is Review => Boolean(review));

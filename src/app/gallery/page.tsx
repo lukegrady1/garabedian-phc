@@ -1,47 +1,12 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { Droplets, Flame, Snowflake, Building2 } from "lucide-react";
+import { Wrench } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
-import { withBasePath } from "@/lib/base-path";
-import { cn } from "@/lib/cn";
 import { FadeIn } from "@/components/motion/FadeIn";
 
 export const metadata: Metadata = {
   title: "Gallery",
 };
-
-function GalleryItem({
-  src,
-  alt,
-  town,
-  className,
-}: {
-  src: string;
-  alt: string;
-  town: string;
-  className?: string;
-}) {
-  return (
-    <div
-      className={cn(
-        "relative overflow-hidden border-2 border-primary hover:border-secondary transition-colors group",
-        className
-      )}
-    >
-      <Image
-        src={withBasePath(src)}
-        alt={alt}
-        fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-        className="object-cover md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
-      />
-      <div className="absolute bottom-0 right-0 bg-primary text-white py-1 px-3 font-body text-[10px] uppercase tracking-[0.1em] font-bold z-10">
-        {town}
-      </div>
-    </div>
-  );
-}
 
 export default function GalleryPage() {
   return (
@@ -55,136 +20,28 @@ export default function GalleryPage() {
             </h1>
             <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-2xl">
               A visual record of professional plumbing, heating, air
-              conditioning, and commercial craftsmanship. No filters, no staged
-              mockups—just real results across Central Massachusetts.
+              conditioning, and commercial craftsmanship across Central
+              Massachusetts.
             </p>
           </div>
         </section>
       </FadeIn>
 
-      {/* Plumbing Section */}
+      {/* Under Construction */}
       <FadeIn>
-        <section className="w-full bg-surface py-[48px] md:py-[80px] px-[20px] md:px-[40px]" id="plumbing">
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
-              <Droplets className="w-8 h-8 text-primary" />
-              Plumbing
+        <section className="w-full bg-surface py-[64px] md:py-[120px] px-[20px] md:px-[40px]">
+          <div className="max-w-[800px] mx-auto flex flex-col items-center text-center border-2 border-primary p-10 md:p-16">
+            <Wrench
+              className="w-[80px] h-[80px] md:w-[120px] md:h-[120px] text-primary mb-8"
+              strokeWidth={1}
+            />
+            <h2 className="font-headline text-[32px] sm:text-[40px] md:text-[56px] leading-[1.05] font-extrabold uppercase text-primary mb-4">
+              Under Construction
             </h2>
-            <div className="h-1 bg-primary w-full mt-2 mb-8" />
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[24px]">
-              <GalleryItem
-                src="/images/gallery/plumbing-auburn.jpg"
-                alt="Professional plumbing"
-                town="Auburn, MA"
-                className="aspect-[16/10] md:aspect-square col-span-2 md:col-span-1"
-              />
-              <GalleryItem
-                src="/images/gallery/pex-tubing-worcester.jpg"
-                alt="PEX tubing"
-                town="Worcester, MA"
-                className="aspect-square"
-              />
-              <GalleryItem
-                src="/images/gallery/vintage-radiator-shrewsbury.jpg"
-                alt="Vintage radiator"
-                town="Shrewsbury, MA"
-                className="aspect-square"
-              />
-            </div>
-          </div>
-        </section>
-      </FadeIn>
-
-      {/* Heating Section */}
-      <FadeIn>
-        <section
-          className="w-full bg-surface-container py-[48px] md:py-[80px] px-[20px] md:px-[40px]"
-          id="heating"
-        >
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
-              <Flame className="w-8 h-8 text-primary" />
-              Heating
-            </h2>
-            <div className="h-1 bg-primary w-full mt-2 mb-8" />
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[24px]">
-              <GalleryItem
-                src="/images/gallery/boiler-system-millbury.jpg"
-                alt="Boiler system"
-                town="Millbury, MA"
-                className="aspect-[4/5] md:aspect-video md:col-span-2"
-              />
-              <GalleryItem
-                src="/images/gallery/furnace-control-grafton.jpg"
-                alt="Furnace control"
-                town="Grafton, MA"
-                className="aspect-[4/5] md:aspect-square"
-              />
-            </div>
-          </div>
-        </section>
-      </FadeIn>
-
-      {/* Air Conditioning Section */}
-      <FadeIn>
-        <section className="w-full bg-surface py-[48px] md:py-[80px] px-[20px] md:px-[40px]" id="ac">
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
-              <Snowflake className="w-8 h-8 text-primary" />
-              Air Conditioning
-            </h2>
-            <div className="h-1 bg-primary w-full mt-2 mb-8" />
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[24px]">
-              <GalleryItem
-                src="/images/gallery/ac-condenser-holden.jpg"
-                alt="AC condenser"
-                town="Holden, MA"
-                className="aspect-[16/10] md:aspect-square col-span-2 md:col-span-1"
-              />
-              <GalleryItem
-                src="/images/gallery/mini-split-boylston.jpg"
-                alt="Mini-split unit"
-                town="Boylston, MA"
-                className="aspect-square"
-              />
-              <GalleryItem
-                src="/images/gallery/custom-ductwork-westborough.jpg"
-                alt="Custom ductwork"
-                town="Westborough, MA"
-                className="aspect-square"
-              />
-            </div>
-          </div>
-        </section>
-      </FadeIn>
-
-      {/* Commercial Section */}
-      <FadeIn>
-        <section
-          className="w-full bg-surface-container py-[48px] md:py-[80px] px-[20px] md:px-[40px]"
-          id="commercial"
-        >
-          <div className="max-w-[1200px] mx-auto">
-            <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-on-surface uppercase flex items-center gap-4">
-              <Building2 className="w-8 h-8 text-primary" />
-              Commercial
-            </h2>
-            <div className="h-1 bg-primary w-full mt-2 mb-8" />
-            {/* NOTE: placeholder images — swap for real commercial project photos. */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-[24px]">
-              <GalleryItem
-                src="/images/home/industrial-boiler-system.jpg"
-                alt="Commercial boiler installation"
-                town="Worcester, MA"
-                className="aspect-[16/10] md:aspect-video md:col-span-2"
-              />
-              <GalleryItem
-                src="/images/home/commercial-ac-repair.jpg"
-                alt="Commercial HVAC work"
-                town="Worcester, MA"
-                className="aspect-[4/5] md:aspect-square"
-              />
-            </div>
+            <p className="font-body text-[16px] md:text-[18px] leading-[1.6] text-on-surface-variant max-w-xl">
+              Our project gallery is currently under construction. We&apos;ll be
+              adding real photos of our work next month — check back soon.
+            </p>
           </div>
         </section>
       </FadeIn>

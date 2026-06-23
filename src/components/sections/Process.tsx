@@ -15,15 +15,15 @@ const steps = [
   },
   {
     number: "3",
-    title: "Quote",
+    title: "Fix",
     description:
-      "You get a clear, flat-rate quote. We don't start until you approve the price.",
+      "We aim to resolve your issue on the spot. For larger projects, we will gather information and send you a quote. Otherwise, we repair or install, test for proper operation, and clear all debris.",
   },
   {
     number: "4",
-    title: "Fix",
+    title: "Confirm",
     description:
-      "We perform the repair, verify the fix with you, and clear all debris.",
+      "Our technician will advise you of any costs incurred and give you options for payment on the spot.",
   },
 ];
 

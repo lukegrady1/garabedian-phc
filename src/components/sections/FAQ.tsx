@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "Do you charge by the hour?",
     answer:
-      'No. We provide upfront, flat-rate pricing so you know the cost before the work starts. No hidden fees or "clock watching."',
+      "Yes. We charge by the hour for service calls, but we can also provide estimates for some jobs upon request.",
   },
   {
     question: "Are you available on weekends?",
@@ -19,7 +19,7 @@ const faqs = [
   {
     question: "Which areas do you serve?",
     answer:
-      "We serve the city of Worcester and the surrounding towns in Central Massachusetts, including Shrewsbury, Auburn, Holden, and Grafton.",
+      "We serve the city of Worcester and the surrounding towns in Central Massachusetts, including Shrewsbury, Auburn, Holden, Grafton, Northborough, Millbury, Leicester, West Boylston, Princeton, Westborough, and Spencer.",
   },
 ];
 
@@ -60,7 +60,7 @@ export function FAQ() {
                   <div
                     className={cn(
                       "overflow-hidden transition-all duration-300",
-                      isOpen ? "max-h-24 opacity-100" : "max-h-0 opacity-0"
+                      isOpen ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
                     )}
                   >
                     <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant">

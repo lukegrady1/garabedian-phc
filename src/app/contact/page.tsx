@@ -106,7 +106,7 @@ export default function ContactPage() {
                 <Clock className="w-6 h-6 text-white/70 shrink-0 mt-1" />
                 <div>
                   <p className="uppercase text-[12px] font-bold tracking-[0.15em] text-white/70 font-body">
-                    Business Hours
+                    Office Hours
                   </p>
                   <p className="font-body text-[16px] leading-[1.5]">
                     {siteConfig.hours.weekday}
@@ -171,7 +171,7 @@ export default function ContactPage() {
             <div className="flex items-center gap-4">
               <Wrench className="w-9 h-9 text-primary" />
               <span className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary">
-                Master Plumber #11427
+                Master Plumber #8875
               </span>
             </div>
             <div className="flex items-center gap-4">

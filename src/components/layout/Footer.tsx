@@ -26,8 +26,8 @@ export function Footer() {
             className="h-[80px] w-auto object-contain"
           />
           <p className="font-body text-[16px] leading-[1.5] text-white/70">
-            Reliable plumbing, heating, and cooling since 1916. Serving Central
-            Massachusetts with honesty and expert tradecraft.
+            Reliable Plumbing, Heating and Cooling since 1916, serving Central
+            Massachusetts with honesty and expert craftsmanship.
           </p>
           <div className="flex gap-4">
             <a
@@ -109,7 +109,7 @@ export function Footer() {
         <div className="col-span-4 mt-12 pt-8 border-t border-white/10 flex flex-row justify-between items-center gap-4">
           <p className="uppercase text-[12px] font-bold tracking-[0.15em] font-body text-white/50">
             &copy; {new Date().getFullYear()} {siteConfig.businessName}.{" "}
-            {siteConfig.license}. {siteConfig.epa}.
+            {siteConfig.license}.
           </p>
           <a
             href="https://gradydigital.com"
@@ -137,7 +137,7 @@ export function Footer() {
             className="h-[80px] w-auto object-contain"
           />
           <p className="font-body text-[13px] leading-[1.5] text-white/70 text-center">
-            Reliable plumbing, heating, and cooling since 1916.
+            Reliable Plumbing, Heating and Cooling since 1916.
           </p>
           <a
             href="https://www.facebook.com/garabedianplumbing"

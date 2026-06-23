@@ -1,7 +1,7 @@
 export const siteConfig = {
-  businessName: "Garabedian Plumbing, Heating & Cooling",
-  tagline: "Worcester's Trusted Plumber, Heating & Cooling Experts.",
-  trade: "Plumbing, Heating & Cooling",
+  businessName: "Garabedian Plumbing, Heating & AC",
+  tagline: "Worcester's Trusted Plumbing, Heating & Cooling Experts.",
+  trade: "Plumbing, Heating & AC",
   phone: "508-757-4803",
   phoneHref: "tel:5087574803",
   emergencyPhone: "508-757-4803",
@@ -16,7 +16,7 @@ export const siteConfig = {
   },
   serviceArea: "Worcester & Central Massachusetts",
   serviceAreaExtended:
-    "Worcester, Shrewsbury, Auburn, Holden, Grafton, Northborough, Millbury, Leicester, West Boylston, Boylston, Westborough",
+    "Worcester, Shrewsbury, Auburn, Holden, Grafton, Northborough, Millbury, Leicester, West Boylston, Boylston, Westborough, Princeton, Spencer",
   serviceAreaList: [
     "Worcester",
     "Shrewsbury",
@@ -27,13 +27,16 @@ export const siteConfig = {
     "Millbury",
     "Leicester",
     "West Boylston",
+    "Princeton",
+    "Westborough",
+    "Spencer",
   ],
-  license: "MA Master Plumber Lic. #11427",
+  license: "MA Master Plumber Lic. #8875-PL-M",
   epa: "EPA 608 Certified",
   insurance: "Fully licensed, bonded, and insured up to $2M",
   bbb: "",
   hours: {
-    weekday: "Monday - Friday: 8 AM - 4:30 PM",
+    weekday: "Monday - Friday: 7:30 AM - 4:30 PM",
     saturday: "Saturday: Closed",
     sunday: "Sunday: Closed",
     emergency: "24/7 Emergency Dispatch",

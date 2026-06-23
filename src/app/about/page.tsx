@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Award, Leaf } from "lucide-react";
-import { siteConfig } from "@/lib/site-config";
+import { Calendar, Award, ClipboardCheck } from "lucide-react";
 import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 import { FadeIn } from "@/components/motion/FadeIn";
@@ -34,7 +33,7 @@ export default function AboutPage() {
         <section className="w-full bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px]">
           <div className="max-w-[1200px] mx-auto">
             <h1 className="font-headline text-[36px] sm:text-[48px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold text-white uppercase mb-4">
-              About Garabedian <br /> Plumbing & Heating
+              About Garabedian <br /> Plumbing, Heating & AC
             </h1>
             <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-2xl">
               Family-owned since 1916. Licensed and insured. Always here when
@@ -50,31 +49,34 @@ export default function AboutPage() {
           <div className="max-w-[1200px] mx-auto">
             <div className="font-body text-[15px] md:text-[18px] leading-[1.6] text-primary max-w-2xl space-y-6">
               <p>
-                For more than 100 years, Garabedian Plumbing & Heating has kept
-                homes and businesses across Worcester County and Central
+                For more than 100 years, Garabedian Plumbing, Heating & AC has
+                kept homes and businesses across Worcester County and Central
                 Massachusetts running smoothly. Founded in 1916 and now in our
-                third generation of family ownership, we{"'"}ve built our
+                fourth generation of family ownership, we{"'"}ve built our
                 reputation the old-fashioned way — by showing up, doing honest
                 work, and standing behind every job.
               </p>
               <p>
                 We handle it all, from a leaky faucet or clogged drain to full
                 heating system installations, boiler and water heater
-                replacements, gas piping, and large commercial design-build
-                projects. Our technicians are licensed, trained, and equipped
-                with modern diagnostic tools, but what really sets us apart is
-                how we treat people. When you call, you reach a real, live
-                member of our team — day or night. And when an emergency
-                strikes, our on-call technicians understand that time is of the
-                essence.
+                replacements, gas piping, and large commercial projects. Our
+                technicians are equipped with the tools, training and support
+                required to address all your plumbing, heating and cooling
+                needs, but what really sets us apart is how we treat people.
+                When you call, you reach a real, live member of our team — day
+                or night. And whether your call is an emergency or not, we aim
+                to provide solutions in as timely a manner as possible. We
+                appreciate your business, and we want to express our gratitude
+                by attending to your issue as quickly, efficiently and
+                professionally as we can.
               </p>
               <p>
                 A century in business has taught us that comfort, safety, and
-                trust matter most. Whether we{"'"}re working in one of the
-                area{"'"}s oldest buildings or installing the latest
-                high-efficiency system, our goal is the same: to get the job
-                done right the first time and leave your home or business better
-                than we found it.
+                trust matter most. Whether we{"'"}re installing a garbage
+                disposal in one of the area{"'"}s oldest buildings or installing
+                the latest high-efficiency system in a newly constructed home,
+                our goal is the same: to get the job done right the first time
+                and leave your home or business better than we found it.
               </p>
             </div>
           </div>
@@ -104,21 +106,23 @@ export default function AboutPage() {
                     <Award className="w-6 h-6 text-surface-variant flex-shrink-0" />
                     <div className="font-body text-[15px] md:text-[18px] leading-[1.6]">
                       <strong className="font-bold uppercase block text-sm tracking-wider opacity-70">
-                        Certification
+                        Licensed
                       </strong>
                       <span>
-                        {siteConfig.license} on every job site.
+                        Working under Massachusetts Master Plumber License
+                        #8875-PL-M.
                       </span>
                     </div>
                   </li>
                   <li className="flex items-center gap-4">
-                    <Leaf className="w-6 h-6 text-surface-variant flex-shrink-0" />
+                    <ClipboardCheck className="w-6 h-6 text-surface-variant flex-shrink-0" />
                     <div className="font-body text-[15px] md:text-[18px] leading-[1.6]">
                       <strong className="font-bold uppercase block text-sm tracking-wider opacity-70">
-                        Standard
+                        Code Compliant
                       </strong>
                       <span>
-                        {siteConfig.epa} for safe heating and cooling operations.
+                        Working closely with city and town inspectors to uphold
+                        Massachusetts Code of Regulations 248-CMR.
                       </span>
                     </div>
                   </li>
@@ -146,8 +150,6 @@ export default function AboutPage() {
                       <span className="w-1.5 h-1.5 bg-surface-variant" />
                       Millbury
                     </p>
-                  </div>
-                  <div className="space-y-2">
                     <p className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-surface-variant" />
                       Holden
@@ -156,6 +158,8 @@ export default function AboutPage() {
                       <span className="w-1.5 h-1.5 bg-surface-variant" />
                       Grafton
                     </p>
+                  </div>
+                  <div className="space-y-2">
                     <p className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-surface-variant" />
                       Leicester
@@ -163,6 +167,22 @@ export default function AboutPage() {
                     <p className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-surface-variant" />
                       West Boylston
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 bg-surface-variant" />
+                      Princeton
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 bg-surface-variant" />
+                      Northborough
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 bg-surface-variant" />
+                      Westborough
+                    </p>
+                    <p className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 bg-surface-variant" />
+                      Spencer
                     </p>
                   </div>
                 </div>
@@ -195,7 +215,7 @@ export default function AboutPage() {
                 Years in Business
               </h4>
               <p className="font-body text-[16px] leading-[1.5] text-primary">
-                Three generations of family ownership means we{"'"}re not going anywhere. We{"'"}ve been here since 1916 and we plan to keep it that way.
+                Four generations of family ownership means we{"'"}re not going anywhere. We{"'"}ve been here since 1916, and we plan to keep it that way.
               </p>
             </div>
 
@@ -215,7 +235,7 @@ export default function AboutPage() {
                 Licensed & Insured
               </h4>
               <p className="font-body text-[16px] leading-[1.5] text-primary">
-                {siteConfig.license}. {siteConfig.epa}. Fully bonded and insured so you never have to worry.
+                Working under Massachusetts Master Plumber License #8875-PL-M, and fully insured for your peace of mind.
               </p>
             </div>
           </div>

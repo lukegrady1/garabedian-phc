@@ -7,9 +7,9 @@ import { withBasePath } from "@/lib/base-path";
 const services = [
   {
     label: "Plumbing",
-    title: "Master Plumbing Services",
+    title: "Plumbing",
     description:
-      "From emergency leaks to full residential repiping. We do the heavy lifting so you stay dry.",
+      "From emergency leaks or water heater failures to faucet installs or full renovations. We provide solutions for all of your plumbing needs.",
     href: "/services/plumbing",
     image: "/images/home/plumbing-pipe-fitting.jpg",
     alt: "Hands expertly tightening a pipe fitting",
@@ -19,9 +19,9 @@ const services = [
   },
   {
     label: "Heating",
-    title: "Boilers & Furnaces",
+    title: "Heating",
     description:
-      "Reliable heat for Worcester winters. Service, repair, and high-efficiency installs.",
+      "From no heat calls to preventative maintenance to full heating system upgrades. We have your heat covered at any time of year.",
     href: "/services/heating",
     image: "/images/home/industrial-boiler-system.jpg",
     alt: "Industrial boiler system",
@@ -31,9 +31,9 @@ const services = [
   },
   {
     label: "Air Conditioning",
-    title: "Cooling Systems",
+    title: "Cooling",
     description:
-      "Keep your home comfortable all summer with precision diagnostic and repair work.",
+      "We help keep your home or business cool with expert air conditioning maintenance and installations.",
     href: "/services/air-conditioning",
     image: "/images/home/exterior-ac-unit.jpg",
     alt: "Exterior AC unit",
@@ -43,9 +43,9 @@ const services = [
   },
   {
     label: "Commercial",
-    title: "Commercial & Design-Build",
+    title: "Commercial Projects",
     description:
-      "Concept to construction for commercial and industrial projects across Central Mass.",
+      "Concept to construction for commercial and industrial projects across Central Massachusetts.",
     href: "/services/commercial",
     image: "/images/services/hero-service-engineering.jpg",
     alt: "Industrial piping and valve systems",
@@ -61,7 +61,7 @@ export function ServicesOverview() {
       <div className="max-w-[1200px] mx-auto">
         <FadeIn>
           <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold text-primary uppercase mb-8 md:mb-12">
-            Core Services
+            Our Services
           </h2>
         </FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-[24px]">

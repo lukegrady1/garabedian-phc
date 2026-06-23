@@ -5,12 +5,14 @@ import { cn } from "@/lib/cn";
 
 const services = [
   "Select a service...",
-  "Emergency Plumbing",
-  "Heating System Repair",
+  "Plumbing Renovation or Installation",
+  "Heating System Maintenance",
   "A/C Maintenance",
-  "Water Heater Install",
+  "Water Heater Maintenance",
   "Drain Cleaning",
-  "Commercial / Design-Build",
+  "Commercial Inquiry",
+  "Estimate",
+  "Other",
 ];
 
 const inputStyles =
@@ -106,7 +108,7 @@ export function ContactForm({ className }: { className?: string }) {
         {/* Service Needed */}
         <div className="space-y-2">
           <label htmlFor="contact-service" className={labelStyles}>
-            Service Needed
+            Non-Emergency Service Needed
           </label>
           <select
             id="contact-service"
