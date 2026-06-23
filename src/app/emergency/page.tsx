@@ -20,8 +20,8 @@ export default function EmergencyPage() {
               Emergency Service
             </h1>
             <p className="font-body text-[15px] md:text-[18px] leading-[1.6] opacity-90 mb-8">
-              Burst pipe? No heat? Gas smell? Don{"'"}t wait — our licensed
-              technicians are available around the clock, every day of the year.
+              Burst pipe? No heat? Gas smell? Don{"'"}t wait — we are available
+              around the clock, every day of the year.
             </p>
           </FadeIn>
           <FadeIn delay={0.15}>
@@ -67,8 +67,8 @@ export default function EmergencyPage() {
                   <li>Complete heat loss</li>
                   <li>Boiler malfunctions</li>
                   <li>Furnace breakdowns</li>
-                  <li>Gas leaks or odors</li>
-                  <li>Carbon monoxide alerts</li>
+                  <li>Gas leak repairs</li>
+                  <li>Heating pipe leaks</li>
                 </ul>
               </div>
               <div className="border-2 border-primary p-5 md:p-8">

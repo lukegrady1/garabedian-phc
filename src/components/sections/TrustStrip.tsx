@@ -7,7 +7,7 @@ const items = [
   "4.2 Stars",
   "Family Owned Since 1916",
   "Licensed and Insured",
-  "Upfront Flat-Rate Pricing",
+  "Upfront Pricing",
   "24/7 Emergency Service",
 ];
 

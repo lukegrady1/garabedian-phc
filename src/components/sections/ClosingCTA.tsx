@@ -7,7 +7,7 @@ export function ClosingCTA() {
     <section className="w-full bg-primary py-[48px] md:py-[80px] px-[20px] md:px-[40px] text-on-primary border-t-4 border-primary">
       <FadeIn className="max-w-[1200px] mx-auto text-center flex flex-col items-center gap-8">
         <h2 className="font-headline text-[32px] sm:text-[48px] md:text-[80px] leading-none font-extrabold tracking-[-0.02em] uppercase max-w-4xl">
-          No heat, no cooling, or no water? Call the crew that shows up.
+          No heat, no AC, or no water? Call the crew that shows up.
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4 w-full max-w-[280px] md:max-w-[600px] mx-auto">
           <Link

@@ -31,7 +31,7 @@ export function Testimonials() {
               delay={i * 0.1}
             >
               <Stars />
-              <p className="font-body text-[15px] md:text-[17px] leading-[1.6] italic mb-6 flex-grow">
+              <p className="font-body text-[15px] md:text-[17px] leading-[1.6] italic mb-6 flex-grow overflow-hidden line-clamp-[10]">
                 &ldquo;{review.quote}&rdquo;
               </p>
               <p className="font-body text-[12px] leading-none tracking-[0.15em] font-bold uppercase text-surface-variant">

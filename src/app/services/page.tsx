@@ -58,8 +58,9 @@ export default function ServicesPage() {
                       Water Heaters
                     </h4>
                     <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant">
-                      Installation and repair of high-efficiency traditional and
-                      tankless systems.
+                      Installation and service of all types of water heaters,
+                      including tank-type, tankless, and indirect, as well as all
+                      related water, gas, and exhaust piping.
                     </p>
                   </div>
                 </li>
@@ -69,19 +70,34 @@ export default function ServicesPage() {
                       Repiping Specialists
                     </h4>
                     <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant">
-                      Full-scale PEX and copper upgrades for residential and
-                      commercial structures.
+                      We are prepared to work with a wide range of piping,
+                      including pex, copper, PVC, ABS, cast iron, and steel for
+                      all your water, drainage, venting, exhaust, and gas piping
+                      needs.
                     </p>
                   </div>
                 </li>
                 <li className="flex gap-4 border-l-4 border-primary pl-6">
                   <div>
                     <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary">
-                      Drain Cleaning
+                      Drain Work
                     </h4>
                     <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant">
-                      High-pressure hydro-jetting and camera inspections for
-                      obstructed main lines.
+                      Our technicians have the tools to clear local blockages in
+                      sinks or toilets as well as to camera pipes and clear main
+                      lines so that your drainage system can flow with ease.
+                    </p>
+                  </div>
+                </li>
+                <li className="flex gap-4 border-l-4 border-primary pl-6">
+                  <div>
+                    <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase text-primary">
+                      Gasfitting
+                    </h4>
+                    <p className="font-body text-[16px] leading-[1.5] text-on-surface-variant">
+                      We install pipe, valves, and fittings for new and existing
+                      gas systems, including for gas stoves, fireplaces, pool
+                      heaters, and more.
                     </p>
                   </div>
                 </li>
@@ -120,8 +136,8 @@ export default function ServicesPage() {
                     Boiler Systems
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
-                    Expert maintenance for high-pressure steam and hot water
-                    boiler configurations.
+                    Expert installation and maintenance for steam and hydronic
+                    systems, both high efficiency and legacy.
                   </p>
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
@@ -129,8 +145,8 @@ export default function ServicesPage() {
                     Furnaces
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
-                    High-efficiency gas furnace installation and emergency
-                    heat-restoration services.
+                    Service and installation of furnaces running on natural gas,
+                    propane, or oil.
                   </p>
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
@@ -144,11 +160,11 @@ export default function ServicesPage() {
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
                   <h4 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase mb-2">
-                    Oil-to-Gas
+                    Upgrades
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
-                    Seamless conversion services to modernize your property{"'"}s
-                    heating efficiency.
+                    Safe removal and disposal of older systems and provision of
+                    new high-efficiency options.
                   </p>
                 </div>
               </div>
@@ -269,8 +285,8 @@ export default function ServicesPage() {
                     Design-Build
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
-                    Concept to plan &amp; spec and through construction with
-                    owners, architects, engineers, and general contractors.
+                    Concept to design and through construction with owners,
+                    architects, engineers, and general contractors.
                   </p>
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
@@ -279,7 +295,7 @@ export default function ServicesPage() {
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
                     Low- and high-pressure gas and specialized process piping for
-                    industrial facilities.
+                    commercial and industrial facilities.
                   </p>
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
@@ -287,8 +303,8 @@ export default function ServicesPage() {
                     Commercial Kitchens
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
-                    Full plumbing and gas fit-outs for restaurant, institutional,
-                    and commercial kitchens.
+                    Full plumbing and gasfitting installations for commercial
+                    kitchens serving restaurants, housing facilities, and more.
                   </p>
                 </div>
                 <div className="bg-white/10 p-6 border-l-4 border-white">
@@ -296,7 +312,7 @@ export default function ServicesPage() {
                     Service &amp; Repair
                   </h4>
                   <p className="font-body text-[16px] leading-[1.5] opacity-80">
-                    Fast commercial service and repair that keeps your facility
+                    Fast, reliable service and repair that keeps your facility
                     running with minimal downtime.
                   </p>
                 </div>
@@ -341,8 +357,8 @@ export default function ServicesPage() {
             Emergency Service Available 24/7
           </h3>
           <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-primary mb-8 max-w-2xl mx-auto">
-            When things go wrong, you need a name you can trust. Our master
-            plumbers and HVAC technicians are standing by.
+            When things go wrong, you need a name you can trust. Our experienced
+            technicians are standing by.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a

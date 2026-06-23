@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { Star, ArrowRight } from "lucide-react";
+import { Star, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { reviews as allReviews, type Review } from "@/lib/reviews-data";
@@ -9,6 +10,8 @@ import { reviews as allReviews, type Review } from "@/lib/reviews-data";
 const half = Math.ceil(allReviews.length / 2);
 const topRowReviews = allReviews.slice(0, half);
 const bottomRowReviews = allReviews.slice(half);
+
+const COPIES = 3;
 
 function ReviewCard({ quote, name }: Review) {
   return (
@@ -35,26 +38,94 @@ function ScrollRow({
   reviews: Review[];
   direction: "left" | "right";
 }) {
-  const animationClass =
-    direction === "left" ? "animate-scroll-left" : "animate-scroll-right";
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const pausedRef = useRef(false);
 
-  // Right-scrolling row needs 3 copies so cards are visible at the -33% start position
-  const copies = direction === "right" ? 3 : 2;
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const copyWidth = () => el.scrollWidth / COPIES;
+    // Start in the middle copy so there is room to scroll either way.
+    el.scrollLeft = copyWidth();
+
+    // Keep the scroll position within the middle copy for a seamless loop.
+    const wrap = () => {
+      const cw = copyWidth();
+      if (cw === 0) return;
+      if (el.scrollLeft >= cw * 2) el.scrollLeft -= cw;
+      else if (el.scrollLeft <= 0) el.scrollLeft += cw;
+    };
+
+    const speed = 0.5 * (direction === "left" ? 1 : -1);
+    let raf = 0;
+    const tick = () => {
+      if (!pausedRef.current) {
+        el.scrollLeft += speed;
+        wrap();
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+
+    el.addEventListener("scroll", wrap, { passive: true });
+    return () => {
+      cancelAnimationFrame(raf);
+      el.removeEventListener("scroll", wrap);
+    };
+  }, [direction]);
+
+  const nudge = (dir: number) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    el.scrollBy({ left: dir * el.clientWidth * 0.9, behavior: "smooth" });
+  };
+
+  const pause = () => {
+    pausedRef.current = true;
+  };
+  const resume = () => {
+    pausedRef.current = false;
+  };
 
   return (
-    <div className="pause-on-hover">
+    <div
+      className="relative group/row"
+      onMouseEnter={pause}
+      onMouseLeave={resume}
+      onTouchStart={pause}
+      onTouchEnd={resume}
+    >
       <div
-        className={`flex ${animationClass} w-max gap-[24px] px-[40px]`}
-        style={{ animationDuration: "160s" }}
+        ref={scrollRef}
+        className="flex w-full overflow-x-auto gap-[24px] px-[40px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
-        {Array.from({ length: copies }).map((_, copyIdx) => (
-          <div key={copyIdx} className="flex gap-[24px]">
+        {Array.from({ length: COPIES }).map((_, copyIdx) => (
+          <div key={copyIdx} className="flex gap-[24px] shrink-0">
             {reviews.map((review) => (
               <ReviewCard key={`${copyIdx}-${review.name}`} {...review} />
             ))}
           </div>
         ))}
       </div>
+
+      {/* Manual scroll controls */}
+      <button
+        type="button"
+        onClick={() => nudge(-1)}
+        aria-label="Scroll reviews left"
+        className="absolute left-1 md:left-3 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-primary/90 text-white border-2 border-white/20 hover:bg-primary transition-colors"
+      >
+        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
+      </button>
+      <button
+        type="button"
+        onClick={() => nudge(1)}
+        aria-label="Scroll reviews right"
+        className="absolute right-1 md:right-3 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-primary/90 text-white border-2 border-white/20 hover:bg-primary transition-colors"
+      >
+        <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
+      </button>
     </div>
   );
 }
@@ -73,7 +144,7 @@ export default function ReviewsPage() {
                 EARNED DAILY
               </h1>
               <p className="font-body text-[15px] md:text-[18px] leading-[1.6] opacity-80 max-w-xl text-white">
-                Our reputation is built on one home, one leak, and one furnace
+                Our reputation is built one home, one leak, and one furnace
                 at a time. See why Worcester County trusts Garabedian.
               </p>
             </div>

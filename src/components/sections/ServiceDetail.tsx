@@ -61,7 +61,13 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
             </div>
             <div className="md:col-span-7 order-1 md:order-2 flex flex-col gap-6">
               <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase text-primary">
-                {service.name} Done Right, Since 1916
+                {service.introHeading
+                  ? service.introHeading.split("\n").map((line, i) => (
+                      <span key={i} className="block">
+                        {line}
+                      </span>
+                    ))
+                  : `${service.doneRightName ?? service.name} Done Right, Since 1916`}
               </h2>
               {service.intro.map((paragraph, i) => (
                 <p
@@ -137,7 +143,7 @@ export function ServiceDetail({ service }: { service: ServiceContent }) {
           </h2>
           <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-primary mb-8 max-w-2xl mx-auto">
             Serving {siteConfig.serviceArea}. Get an honest, upfront estimate from
-            a licensed pro — or call now for fast service.
+            a pro — or call now for fast service.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link

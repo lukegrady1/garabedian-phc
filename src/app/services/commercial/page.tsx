@@ -17,17 +17,12 @@ const capabilities = [
   {
     title: "Design-Build",
     description:
-      "Concept to plan & spec and through construction, working alongside owners, architects, engineers, and general contractors.",
+      "Concept to design and through construction, working alongside owners, architects, engineers, and general contractors.",
   },
   {
-    title: "Gas Piping",
+    title: "Gas & Process Piping",
     description:
-      "Low- and high-pressure gas piping systems engineered and installed to code for commercial and industrial facilities.",
-  },
-  {
-    title: "Process Piping",
-    description:
-      "Specialized process piping for manufacturing, laboratory, and industrial applications.",
+      "Low- and high-pressure gas and specialized process piping for commercial and industrial facilities.",
   },
   {
     title: "Roof Drainage",
@@ -37,7 +32,7 @@ const capabilities = [
   {
     title: "Commercial Kitchens",
     description:
-      "Complete plumbing and gas fit-outs for restaurant, institutional, and commercial kitchens.",
+      "Full plumbing and gasfitting installations for commercial kitchens serving restaurants, housing facilities, and more.",
   },
   {
     title: "Special Waste",
@@ -45,14 +40,9 @@ const capabilities = [
       "Acid, grease, and special-waste systems designed and installed for compliance and safety.",
   },
   {
-    title: "Commercial Service & Repair",
+    title: "Service & Repair",
     description:
       "Fast, reliable service and repair that keeps your facility running with minimal downtime.",
-  },
-  {
-    title: "High-End Remodeling",
-    description:
-      "Premium residential remodeling — bathrooms, kitchens, and additions — built to commercial standards.",
   },
 ];
 
@@ -132,11 +122,11 @@ export default function CommercialPage() {
               All Services
             </Link>
             <h1 className="font-headline text-[40px] sm:text-[56px] md:text-[80px] leading-[1.0] tracking-[-0.02em] font-extrabold uppercase mb-4">
-              Commercial &amp; Design-Build
+              Commercial
             </h1>
             <div className="w-24 h-2 bg-secondary mb-6" />
             <p className="font-body text-[13px] md:text-[15px] leading-[1.4] tracking-[0.2em] font-bold uppercase text-surface-variant max-w-2xl">
-              From Concept to Plan &amp; Spec and Through Construction
+              From Concept to Design and Through Construction
             </p>
           </FadeIn>
         </div>
@@ -164,11 +154,12 @@ export default function CommercialPage() {
                 Design-Build From Concept to Completion
               </h2>
               <p className="font-body text-[16px] md:text-[18px] leading-[1.7] text-on-surface-variant">
-                For over 100 years, Garabedian has taken commercial and
-                industrial projects from concept to plan &amp; spec and through
-                construction. Our design-build team works alongside owners,
-                architects, engineers, and general contractors to bring complex
-                projects to life — on spec, on code, and on schedule.
+                Garabedian Plumbing has taken commercial and industrial
+                projects from concept through construction for companies
+                throughout the Greater Worcester area. Our design-build team
+                works alongside owners, architects, engineers, and general
+                contractors to bring complex projects to life on spec, on code,
+                on schedule, and on budget.
               </p>
               <p className="font-body text-[16px] md:text-[18px] leading-[1.7] text-on-surface-variant">
                 From manufacturing facilities and medical offices to breweries,
@@ -213,10 +204,10 @@ export default function CommercialPage() {
         <section className="w-full bg-primary text-white py-[48px] md:py-[80px] px-[20px] md:px-[40px]">
           <div className="max-w-[1200px] mx-auto">
             <h2 className="font-headline text-[28px] sm:text-[36px] md:text-[48px] leading-[1.1] font-bold uppercase mb-2">
-              Contractors We Service
+              Contractors We Have Partnered With
             </h2>
             <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-3xl mb-8 md:mb-10">
-              We partner with many of the region&apos;s leading general
+              We have partnered with many of the region&apos;s leading general
               contractors and construction firms.
             </p>
             <ul className="columns-2 lg:columns-3 gap-x-6 md:gap-x-[24px] mb-12 md:mb-16">
@@ -233,7 +224,7 @@ export default function CommercialPage() {
               ))}
             </ul>
             <h3 className="font-headline text-[24px] sm:text-[28px] md:text-[36px] leading-[1.1] font-bold uppercase mb-2">
-              Commercial Clients We&apos;ve Served
+              Commercial Clients We Have Served
             </h3>
             <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-white/80 max-w-3xl mb-8 md:mb-10">
               Trusted by institutions, manufacturers, and businesses across
@@ -263,9 +254,8 @@ export default function CommercialPage() {
             Have a Commercial Project?
           </h2>
           <p className="font-body text-[15px] md:text-[18px] leading-[1.6] text-primary mb-8 max-w-2xl mx-auto">
-            Serving {siteConfig.serviceArea}. Let our design-build team take your
-            project from concept through construction — request a consultation or
-            call to talk it through.
+            Let our design-build team take your project from concept through
+            construction — request a consultation or call to talk it through.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
