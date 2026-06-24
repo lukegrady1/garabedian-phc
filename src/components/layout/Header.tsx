@@ -27,7 +27,7 @@ export function Header() {
           }}
         >
           <Image
-            src={withBasePath("/images/shared/logo.png")}
+            src={withBasePath("/images/shared/logo.webp")}
             alt={siteConfig.businessName}
             width={200}
             height={64}

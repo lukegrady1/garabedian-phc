@@ -5,25 +5,25 @@ import { withBasePath } from "@/lib/base-path";
 
 const projects = [
   {
-    image: "/images/home/tankless-water-heater-install.jpg",
+    image: "/images/home/tankless-water-heater-install.webp",
     alt: "Tankless water heater install",
     location: "Shrewsbury, MA",
     title: "Water Heater Install",
   },
   {
-    image: "/images/home/bathroom-fixture-upgrade.jpg",
+    image: "/images/home/bathroom-fixture-upgrade.webp",
     alt: "Bathroom upgrade",
     location: "Worcester, MA",
     title: "Fixture Upgrade",
   },
   {
-    image: "/images/home/furnace-maintenance.jpg",
+    image: "/images/home/furnace-maintenance.webp",
     alt: "Furnace maintenance",
     location: "Auburn, MA",
     title: "Furnace Tune-Up",
   },
   {
-    image: "/images/home/commercial-ac-repair.jpg",
+    image: "/images/home/commercial-ac-repair.webp",
     alt: "Commercial AC repair",
     location: "Northborough, MA",
     title: "Commercial A/C Repair",

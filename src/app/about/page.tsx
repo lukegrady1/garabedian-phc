@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 
 const fleet = [
   {
-    src: "/images/fleet/garabedian-plumbing-heating-van-worcester-ma.jpg",
+    src: "/images/fleet/garabedian-plumbing-heating-van-worcester-ma.webp",
     alt: "Garabedian Plumbing & Heating service van in Worcester, MA",
   },
   {
-    src: "/images/fleet/garabedian-plumbing-heating-van-central-ma.jpg",
+    src: "/images/fleet/garabedian-plumbing-heating-van-central-ma.webp",
     alt: "Garabedian Plumbing & Heating service van serving Central Massachusetts",
   },
   {
-    src: "/images/fleet/garabedian-plumbing-heating-van-shrewsbury-ma.jpg",
+    src: "/images/fleet/garabedian-plumbing-heating-van-shrewsbury-ma.webp",
     alt: "Garabedian Plumbing & Heating service van in Shrewsbury, MA",
   },
 ];

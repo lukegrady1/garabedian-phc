@@ -19,7 +19,7 @@ export function Footer() {
         {/* Column 1: Logo + Tagline */}
         <div className="flex flex-col gap-6">
           <Image
-            src={withBasePath("/images/shared/logo.png")}
+            src={withBasePath("/images/shared/logo.webp")}
             alt={siteConfig.businessName}
             width={240}
             height={80}
@@ -130,7 +130,7 @@ export function Footer() {
         {/* Logo + Social centered */}
         <div className="flex flex-col items-center gap-3">
           <Image
-            src={withBasePath("/images/shared/logo.png")}
+            src={withBasePath("/images/shared/logo.webp")}
             alt={siteConfig.businessName}
             width={240}
             height={80}

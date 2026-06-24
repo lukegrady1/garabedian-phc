@@ -143,7 +143,7 @@ export default function ContactPage() {
           <figure className="border-2 border-primary aspect-[4/3] relative bg-surface-variant overflow-hidden">
             <Image
               src={withBasePath(
-                "/images/fleet/garabedian-plumbing-heating-van-central-ma.jpg",
+                "/images/fleet/garabedian-plumbing-heating-van-central-ma.webp",
               )}
               alt="Garabedian Plumbing & Heating service van ready to roll across Worcester County"
               fill

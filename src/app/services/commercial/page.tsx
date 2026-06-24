@@ -103,7 +103,7 @@ export default function CommercialPage() {
       <section className="relative w-full min-h-[360px] md:min-h-[460px] flex items-center overflow-hidden bg-primary text-white">
         <div className="absolute inset-0 z-0">
           <Image
-            src={withBasePath("/images/services/hero-service-engineering.jpg")}
+            src={withBasePath("/images/services/hero-service-engineering.webp")}
             alt="Commercial mechanical and piping systems"
             fill
             sizes="100vw"
@@ -140,7 +140,7 @@ export default function CommercialPage() {
               <div className="border-2 border-primary p-1">
                 <div className="relative aspect-[3/2] md:aspect-[4/5]">
                   <Image
-                    src={withBasePath("/images/home/industrial-boiler-system.jpg")}
+                    src={withBasePath("/images/home/industrial-boiler-system.webp")}
                     alt="Commercial mechanical room"
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"

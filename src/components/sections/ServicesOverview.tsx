@@ -11,7 +11,7 @@ const services = [
     description:
       "From emergency leaks or water heater failures to faucet installs or full renovations. We provide solutions for all of your plumbing needs.",
     href: "/services/plumbing",
-    image: "/images/home/plumbing-pipe-fitting.jpg",
+    image: "/images/home/plumbing-pipe-fitting.webp",
     alt: "Hands expertly tightening a pipe fitting",
     colSpan: "md:col-span-8",
     height: "h-[400px]",
@@ -23,7 +23,7 @@ const services = [
     description:
       "From no heat calls to preventative maintenance to full heating system upgrades. We have your heat covered at any time of year.",
     href: "/services/heating",
-    image: "/images/home/industrial-boiler-system.jpg",
+    image: "/images/home/industrial-boiler-system.webp",
     alt: "Industrial boiler system",
     colSpan: "md:col-span-4 md:row-span-2",
     height: "h-[400px] md:h-auto",
@@ -35,7 +35,7 @@ const services = [
     description:
       "We help keep your home or business cool with expert air conditioning maintenance and installations.",
     href: "/services/air-conditioning",
-    image: "/images/home/exterior-ac-unit.jpg",
+    image: "/images/home/exterior-ac-unit.webp",
     alt: "Exterior AC unit",
     colSpan: "md:col-span-8",
     height: "h-[350px]",
@@ -47,7 +47,7 @@ const services = [
     description:
       "Concept to construction for commercial and industrial projects across Central Massachusetts.",
     href: "/services/commercial",
-    image: "/images/services/hero-service-engineering.jpg",
+    image: "/images/services/hero-service-engineering.webp",
     alt: "Industrial piping and valve systems",
     colSpan: "md:col-span-12",
     height: "h-[350px]",

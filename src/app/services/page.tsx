@@ -38,7 +38,7 @@ export default function ServicesPage() {
               <div className="border-2 border-current p-1 text-primary">
                 <div className="relative aspect-[3/2] md:aspect-square">
                   <Image
-                    src={withBasePath("/images/services/plumbing-work.jpg")}
+                    src={withBasePath("/images/services/plumbing-work.webp")}
                     alt="Plumbing Work"
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"
@@ -188,7 +188,7 @@ export default function ServicesPage() {
               <div className="border-2 border-current p-1 text-white">
                 <div className="relative aspect-[3/2] md:aspect-[4/5]">
                   <Image
-                    src={withBasePath("/images/services/heating-system.jpg")}
+                    src={withBasePath("/images/services/heating-system.webp")}
                     alt="Heating System"
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"
@@ -209,7 +209,7 @@ export default function ServicesPage() {
               <div className="border-2 border-current p-1 text-primary">
                 <div className="relative aspect-[3/2] md:aspect-square">
                   <Image
-                    src={withBasePath("/images/services/ac-condenser-unit.jpg")}
+                    src={withBasePath("/images/services/ac-condenser-unit.webp")}
                     alt="Modern residential outdoor air conditioning condenser unit"
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"
@@ -337,7 +337,7 @@ export default function ServicesPage() {
               <div className="border-2 border-current p-1 text-white">
                 <div className="relative aspect-[3/2] md:aspect-[4/5]">
                   <Image
-                    src={withBasePath("/images/home/commercial-ac-repair.jpg")}
+                    src={withBasePath("/images/home/commercial-ac-repair.webp")}
                     alt="Commercial mechanical and HVAC work"
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"

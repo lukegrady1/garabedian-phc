@@ -42,7 +42,7 @@ export function Hero() {
         <FadeIn className="lg:col-span-5 w-full max-w-[440px] lg:max-w-none mx-auto" delay={0.2}>
           <div className="border-[6px] md:border-[12px] border-primary w-full aspect-[4/3] relative bg-surface-variant overflow-hidden">
             <Image
-              src={withBasePath("/images/fleet/garabedian-plumbing-heating-van-worcester-ma.jpg")}
+              src={withBasePath("/images/fleet/garabedian-plumbing-heating-van-worcester-ma.webp")}
               alt="Garabedian Plumbing &amp; Heating service van in Worcester, MA"
               fill
               sizes="(max-width: 1024px) 440px, 42vw"

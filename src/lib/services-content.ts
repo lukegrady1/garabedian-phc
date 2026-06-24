@@ -48,7 +48,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
     metaTitle: "Plumbing, Worcester MA",
     metaDescription:
       "Licensed master plumbers in Worcester, MA. Water heaters, repiping, drain cleaning, fixtures, gas lines, and 24/7 emergency plumbing for Central Massachusetts.",
-    heroImage: "/images/services/plumbing-work.jpg",
+    heroImage: "/images/services/plumbing-work.webp",
     heroImageAlt: "Master plumber fitting copper pipe",
     tagline: "Plumbing & Gasfitting for Homes and Businesses",
     doneRightName: "Plumbing & Gasfitting",
@@ -56,7 +56,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
       "From a dripping faucet to a full house repair, or full house re-pipe, Garabedian Plumbing has handled Worcester's gas and plumbing needs for over 100 years. Our technicians diagnose the real problem the first time and fix it to last. No guesswork, no upsell.",
       "Every job is backed by upfront and honest pricing, clean workmanship, and the same family name that has served Central Massachusetts since 1916. Whether it's an emergency leak at 2 a.m. or a planned bathroom upgrade, you get a pro who treats your home like their own.",
     ],
-    introImage: "/images/home/plumbing-pipe-fitting.jpg",
+    introImage: "/images/home/plumbing-pipe-fitting.webp",
     introImageAlt: "Hands expertly tightening a pipe fitting",
     offeringsHeading: "Our Plumbing Services",
     offerings: [
@@ -110,14 +110,14 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
     metaTitle: "Heating & Boilers, MA",
     metaDescription:
       "Worcester heating contractor for boilers, furnaces, radiant heat, and oil-to-gas conversions. EPA-certified installs, repairs, and 24/7 emergency heat in Central MA.",
-    heroImage: "/images/services/heating-system.jpg",
+    heroImage: "/images/services/heating-system.webp",
     heroImageAlt: "Technician servicing a heating system",
     tagline: "Reliable Heat for Worcester Winters",
     intro: [
       "When the temperature drops, you need a heating contractor who answers the phone and shows up. Garabedian installs, services, and repairs boilers, furnaces, and radiant systems across Worcester County — keeping homes and businesses warm through the coldest New England nights.",
       "We assess every system for efficiency and safety, so you spend less on fuel and never worry about a mid-winter breakdown. And if your heat ever fails, our 24/7 emergency crew is ready to restore it fast.",
     ],
-    introImage: "/images/home/industrial-boiler-system.jpg",
+    introImage: "/images/home/industrial-boiler-system.webp",
     introImageAlt: "Industrial boiler system",
     offeringsHeading: "Our Heating Services",
     offerings: [
@@ -171,7 +171,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
     metaTitle: "Air Conditioning, MA",
     metaDescription:
       "Worcester AC and cooling experts. Central air, ductless mini-splits, indoor air quality, and fast AC repair for homes and businesses across Central Massachusetts.",
-    heroImage: "/images/services/ac-condenser-unit.jpg",
+    heroImage: "/images/services/ac-condenser-unit.webp",
     heroImageAlt: "Modern residential outdoor air conditioning condenser unit",
     tagline: "Stay Comfortable All Summer Long",
     introHeading: "Air Conditioning Done Right,\nso You Stay Cool While It's Hot",
@@ -179,7 +179,7 @@ export const servicesContent: Record<ServiceContent["slug"], ServiceContent> = {
       "New England summers can turn brutal fast. Garabedian keeps your home cool with expertly installed central air, ductless mini-splits, and indoor air quality systems — plus fast, accurate repairs when the heat is on, and the AC isn't.",
       "We size and install every system for efficiency, quiet operation, and even cooling in every room. From historic homes that can't take ductwork to whole-building commercial systems, our technicians deliver comfort you can count on.",
     ],
-    introImage: "/images/home/exterior-ac-unit.jpg",
+    introImage: "/images/home/exterior-ac-unit.webp",
     introImageAlt: "Exterior air conditioning unit",
     offeringsHeading: "Our Air Conditioning Services",
     offerings: [
