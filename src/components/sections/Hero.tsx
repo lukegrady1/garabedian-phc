@@ -6,7 +6,7 @@ import { FadeIn } from "@/components/motion/FadeIn";
 export function Hero() {
   return (
     <section className="w-full bg-surface px-[20px] md:px-[40px] pt-6 pb-7 md:py-[80px] border-b-2 border-outline">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-[24px] items-center">
+      <div className="max-w-[1320px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-[24px] items-center">
         <FadeIn className="lg:col-span-7 flex flex-col gap-4 md:gap-6">
           <div className="flex flex-col gap-3 md:gap-4">
             <div className="flex items-center gap-3">
@@ -39,15 +39,15 @@ export function Hero() {
             </Link>
           </div>
         </FadeIn>
-        <FadeIn className="lg:col-span-5 w-full max-w-[440px] lg:max-w-none mx-auto" delay={0.2}>
+        <FadeIn className="lg:col-span-5 w-full max-w-[500px] lg:max-w-none mx-auto" delay={0.2}>
           <div className="border-[6px] md:border-[12px] border-primary w-full aspect-[4/3] relative bg-surface-variant overflow-hidden">
             <Image
               src={withBasePath("/images/fleet/garabedian-plumbing-heating-van-worcester-ma.webp")}
               alt="Garabedian Plumbing &amp; Heating service van in Worcester, MA"
               fill
-              sizes="(max-width: 1024px) 440px, 42vw"
+              sizes="(max-width: 1024px) 500px, 46vw"
               preload={true}
-              className="object-cover grayscale-[0.2]"
+              className="object-cover grayscale-[0.2] scale-[1.08] origin-right"
             />
           </div>
         </FadeIn>
