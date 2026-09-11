@@ -21,6 +21,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.primaryDomain),
   title: {
     default: `${siteConfig.businessName} | Worcester & Central MA`,
     template: `%s | ${siteConfig.businessName}`,
@@ -36,7 +37,8 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": siteConfig.primaryDomain || undefined,
+    "@id": siteConfig.primaryDomain,
+    url: siteConfig.primaryDomain,
     name: siteConfig.businessName,
     description: `${siteConfig.trade} for ${siteConfig.serviceArea}`,
     telephone: siteConfig.phone,

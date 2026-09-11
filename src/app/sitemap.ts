@@ -4,7 +4,7 @@ import { siteConfig } from "@/lib/site-config";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = siteConfig.primaryDomain || "https://example.com";
+  const baseUrl = siteConfig.primaryDomain;
 
   return [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "monthly", priority: 1 },
