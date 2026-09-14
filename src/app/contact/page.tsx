@@ -13,7 +13,7 @@ import { siteConfig } from "@/lib/site-config";
 import { withBasePath } from "@/lib/base-path";
 import { cn } from "@/lib/cn";
 import { FadeIn } from "@/components/motion/FadeIn";
-import { ContactForm } from "@/components/forms/ContactForm";
+// import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -39,13 +39,16 @@ export default function ContactPage() {
 
       {/* Main Contact Section */}
       <section className="max-w-[1200px] mx-auto px-[20px] md:px-[40px] py-[48px] md:py-[80px] grid grid-cols-1 md:grid-cols-12 gap-[24px] items-start">
-        {/* Left Column: Form */}
-        <FadeIn className="md:col-span-7">
+        {/* Left Column: Form — temporarily disabled until it is wired to a backend */}
+        {/* <FadeIn className="md:col-span-7">
           <ContactForm />
-        </FadeIn>
+        </FadeIn> */}
 
-        {/* Right Column: Panel + Map */}
-        <FadeIn className="md:col-span-5 space-y-[24px]" delay={0.15}>
+        {/* Right Column: Panel + Map (spans full row while the form is disabled) */}
+        <FadeIn
+          className="md:col-span-12 grid grid-cols-1 md:grid-cols-2 gap-[24px] items-start"
+          delay={0.15}
+        >
           {/* Info Panel */}
           <div className="bg-primary text-white p-6 md:p-10 border-2 border-primary">
             <h2 className="font-headline text-[20px] md:text-[24px] leading-[1.2] font-semibold uppercase border-b-2 border-white/30 pb-4 mb-6">
